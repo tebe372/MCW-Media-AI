@@ -1,8 +1,8 @@
-# Media AI
+Media AI
 
-## Whiteboard design session trainer guide
+Whiteboard design session trainer guide
 
-## March 2018
+March 2018
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
 
@@ -10,45 +10,45 @@ Microsoft may have patents, patent applications, trademarks, copyrights, or othe
 
 The names of manufacturers, products, or URLs are provided for informational purposes only and Microsoft makes no representations and warranties, either expressed, implied, or statutory, regarding these manufacturers or the use of the products with any Microsoft technologies. The inclusion of a manufacturer or product does not imply endorsement of Microsoft of the manufacturer or product. Links may be provided to third party sites. Such sites are not under the control of Microsoft and Microsoft is not responsible for the contents of any linked site or any link contained in a linked site, or any changes or updates to such sites. Microsoft is not responsible for webcasting or any other form of transmission received from any linked site. Microsoft is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement of Microsoft of the site or the products contained therein.
 
-2018 Microsoft Corporation. All rights reserved.
+?? 2018 Microsoft Corporation. All rights reserved.
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
-# Contents
+# Contents {#contents .TOCHeading}
 
-[Trainer information](#trainer-information)
+[Trainer information 1](#trainer-information)
 
-[Media AI whiteboard design session student guide](#media-ai-whiteboard-design-session-student-guide)
+[Media AI whiteboard design session student guide 4](#media-ai-whiteboard-design-session-student-guide)
 
-[Abstract and learning objectives](#abstract-and-learning-objectives)
+[Abstract and learning objectives 4](#abstract-and-learning-objectives)
 
-[Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+[Step 1: Review the customer case study 4](#step-1-review-the-customer-case-study)
 
-[Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+[Step 2: Design a proof of concept solution 9](#step-2-design-a-proof-of-concept-solution)
 
-[Step 3: Present the solution](#step-3-present-the-solution)
+[Step 3: Present the solution 10](#step-3-present-the-solution)
 
-[Wrap-up](#wrap-up)
+[Wrap-up 11](#wrap-up)
 
-[Additional references](#additional-references)
+[Additional references 12](#additional-references)
 
-[Media AI whiteboard design session trainer guide](#media-ai-whiteboard-design-session-trainer-guide)
+[Media AI whiteboard design session trainer guide 13](#media-ai-whiteboard-design-session-trainer-guide)
 
-[Step 1: Review the customer case study](#step-1-review-the-customer-case-study-1)
+[Step 1: Review the customer case study 13](#step-1-review-the-customer-case-study-1)
 
-[Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution-1)
+[Step 2: Design a proof of concept solution 13](#step-2-design-a-proof-of-concept-solution-1)
 
-[Step 3: Present the solution](#step-3-present-the-solution-1)
+[Step 3: Present the solution 13](#step-3-present-the-solution-1)
 
-[Wrap-up](#wrap-up-1)
+[Wrap-up 13](#wrap-up-1)
 
-[Preferred target audience](#preferred-target-audience)
+[Preferred target audience 14](#preferred-target-audience)
 
-[Preferred solution](#preferred-solution)
+[Preferred solution 15](#preferred-solution)
 
-[Checklist of preferred objection handling](#checklist-of-preferred-objection-handling)
+[Checklist of preferred objection handling 17](#checklist-of-preferred-objection-handling)
 
-[Customer quote (to be read back to the attendees at the end)](#customer-quote-to-be-read-back-to-the-attendees-at-the-end)
+[Customer quote (to be read back to the attendees at the end) 18](#customer-quote-to-be-read-back-to-the-attendees-at-the-end)
 
 # Trainer information
 
@@ -97,6 +97,8 @@ Outcome: Analyze your customer's needs
 Outcome: Prepare to present a solution for your target customer audience
 
 -   Determine your target customer audience
+
+<!-- -->
 
 -   Determine customer's business needs to address your solution
 
@@ -172,13 +174,13 @@ Students will be better able to build media applications including:
 
 ## Step 1: Review the customer case study 
 
-**Outcome**
+**Outcome **
 
 Analyze your customer's needs.
 
 #### Facilitator/subject matter expert (SME) presentation of customer case study 
 
-Time frame: 15 minutes
+Timeframe: 15 minutes
 
 Directions: With all participants in the session, the facilitator/SME presents an overview of the customer case study along with technical tips.
 
@@ -187,6 +189,8 @@ Directions: With all participants in the session, the facilitator/SME presents a
 2.  Read all of the directions for Steps 1--3 in the Attendee guide.
 
 3.  As a table team, review the following customer case study.
+
+####  
 
 #### Customer situation
 
@@ -199,6 +203,8 @@ Due to the efforts of their sales teams, Contoso has created many video-based tr
 Because of this changing landscape of getting further into the IT Training business, the CEO of Contoso Consulting, Jill Sampson, has decided to pursue the development of Contoso's own online, on-demand, video training service. Jill says, "I want to build the Netflix of IT Training!" This new service will allow Contoso to easily resell subscriptions to their clients for all of their video training courses. This will include general courses that any client can be sold, to one-off custom courses built for specific clients based on their own specific IT Infrastructure or Custom Software that Contoso has delivered to them.
 
 Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of the media and video services within the Microsoft Azure platform. However, she still has several questions to answer before making a final decision on the technology and platforms to use for implementation. The Contoso IT Development and Engineering teams do not have much experience with building and maintaining video streaming services, so they are a bit uncertain of what path to take with the design and architecture at this point. In initial conversations with the sales team, Mary has said, "We have a tremendous amount of Enterprise IT experience within our organization, we just need a little help figuring out the unknowns here."
+
+####  
 
 #### Customer needs 
 
@@ -214,6 +220,8 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 6.  Use Serverless compute where possible to minimize overall maintenance and overhead cost
 
+####  
+
 #### Customer objections 
 
 1.  Is there a service to automate transcription of the videos? Manual transcription is costly.
@@ -224,15 +232,17 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 4.  When we grow our library of content, how are we going to ensure the search capabilities stay responsive?
 
+####  
+
 #### Infographic for common scenarios
 
 ###### Video-on-demand digital media
 
-![This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image2.png "Common Video-on-demand scenarios infographic")
+![This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.](\Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image2.png "Common Video-on-demand scenarios infographic")
 
 ###### Keyword search/speech-to-text/OCR digital media
 
-![This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image3.png "Common keyword search/speech-to-text/OCR digital media infographic")
+![This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.](\Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image3.png "Common keyword search/speech-to-text/OCR digital media infographic")
 
 ## Step 2: Design a proof of concept solution
 
@@ -240,7 +250,7 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 Prepare to present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-Time frame: 60 minutes
+Timeframe: 60 minutes
 
 **Business needs**
 
@@ -250,7 +260,7 @@ Directions: With all participants at your table, answer the following questions 
 
 2.  What customer business needs do you need to address with your solution?
 
-**Design**
+**Design **
 
 Directions: With all participants at your table, respond to the following questions on a flip chart.
 
@@ -274,15 +284,15 @@ Prepare a 15-minute chalk-talk style presentation to the customer.
 
 ## Step 3: Present the solution
 
-**Outcome**
+**Outcome **
 
 Present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-**Presentation**
+**Presentation **
 
 Timeframe: 30 minutes
 
-**Directions**
+**Directions **
 
 1.  Pair with another table.
 
@@ -300,30 +310,43 @@ Timeframe: 30 minutes
 
 ##  Wrap-up 
 
-Time frame: 15 minutes
+Timeframe: 15 minutes
 
 -   Tables reconvene with the larger group to hear a SME share the preferred solution for the case study.
 
 ##  Additional references
 
-|    |            |
-|----------|:-------------:|
-| Build custom video AI workflow with Video Indexer and Logic Apps | <https://azure.microsoft.com/en-us/blog/build-custom-video-ai-workflows-with-video-indexer-and-logic-apps>|
-| What is Azure Search?   | <https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search>  |
-| Getting Started with the Video Indexer API    | <https://azure.microsoft.com/en-us/blog/gettingstartedwiththevideoindexerapi>  |
-| Use Azure Video Indexer API    | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-use-apis>   |
-| Video Indexer API Signup |   <https://videobreakdown.portal.azure-api.net/>   |
-| Video Indexer Overview  | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview>       |
-| Web Apps Overview    | <https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview>  |
-| What are Logic Apps?  |  <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-what-are-logic-apps>  |
-| Introduction to Blob storage   |  <https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction>  |
-| Azure Media Services overview  |  <https://docs.microsoft.com/en-us/azure/media-services/media-services-overview>   |
-| Get started with delivering content on demand using .NET SDK  | <https://docs.microsoft.com/en-us/azure/media-services/media-services-dotnet-get-started>   |
-| Deliver content to customers  | <https://docs.microsoft.com/en-us/azure/media-services/media-services-deliver-content-overview>    |
-| Playback media with Media Player  | <https://docs.microsoft.com/en-us/azure/media-services/media-services-develop-video-players>  |
-| Overview of the Azure Content Delivery Network (CDN)  | <https://docs.microsoft.com/en-us/azure/cdn/cdn-overview>    |
-
-
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| **Description **                                                 | > **Links **                                                                                                 |
++==================================================================+==============================================================================================================+
+| What is Azure Search?                                            | > <https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search>                                |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Build custom video AI workflow with Video Indexer and Logic Apps | > <https://azure.microsoft.com/en-us/blog/build-custom-video-ai-workflows-with-video-indexer-and-logic-apps> |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Getting Started with the Video Indexer API                       | > <https://azure.microsoft.com/en-us/blog/gettingstartedwiththevideoindexerapi>                              |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Use Azure Video Indexer API                                      | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-use-apis>             |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Video Indexer API Signup                                         | <https://videobreakdown.portal.azure-api.net/>                                                               |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Video Indexer Overview                                           | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview>             |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Web Apps Overview                                                | <https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview>                                |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| What are Logic Apps?                                             | <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-what-are-logic-apps>                           |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Introduction to Blob storage                                     | <https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction>                            |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Azure Media Services overview                                    | <https://docs.microsoft.com/en-us/azure/media-services/media-services-overview>                              |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Get started with delivering content on demand using .NET SDK     | <https://docs.microsoft.com/en-us/azure/media-services/media-services-dotnet-get-started>                    |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Deliver content to customers                                     | <https://docs.microsoft.com/en-us/azure/media-services/media-services-deliver-content-overview>              |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Playback media with Media Player                                 | <https://docs.microsoft.com/en-us/azure/media-services/media-services-develop-video-players>                 |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Overview of the Azure Content Delivery Network (CDN)             | <https://docs.microsoft.com/en-us/azure/cdn/cdn-overview>                                                    |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
 
 # Media AI whiteboard design session trainer guide
 
@@ -361,6 +384,8 @@ Time frame: 15 minutes
 
     -   The presentation and objections should be no longer than 10-minutes.
 
+<!-- -->
+
 -   Have participants on the customer team give feedback to the Microsoft team.
 
     -   The feedback should be no longer than 5 minutes.
@@ -393,9 +418,9 @@ The preferred solution consists of the following high-level components:
 
 The following High-Level Diagram displays the overall, general architecture of the preferred solution:
 
-![Icons that are connected by arrows comprise this rectangular diagram. From the top left, Web App -- Admin Site points linearly down to Azure Storage, which points right to a blue box labeled Azure Logic App. In this box, Azure Logic App points at Video Indexer Connector, and the blue box points right to Video Indexer Service. The rest of the icons use double-sided arrows and point to and from: Video Indexer Service up to Web App -- Frontend, left to Database, which points down through the middle of the rectangle to Azure Function and back down to the blue Azure Logic App box. A double-sided arrow also connects Azure Function to Video Indexer Service, and on the right side, a double-sided arrow points from Web App -- Frontend to Media Player.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image4.png "Solution architecture diagram")
+![Icons that are connected by arrows comprise this rectangular diagram. From the top left, Web App -- Admin Site points linearly down to Azure Storage, which points right to a blue box labeled Azure Logic App. In this box, Azure Logic App points at Video Indexer Connector, and the blue box points right to Video Indexer Service. The rest of the icons use double-sided arrows and point to and from: Video Indexer Service up to Web App -- Frontend, left to Database, which points down through the middle of the rectangle to Azure Function and back down to the blue Azure Logic App box. A double-sided arrow also connects Azure Function to Video Indexer Service, and on the right side, a double-sided arrow points from Web App -- Frontend to Media Player.](\Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image4.png "Solution architecture diagram")
 
-
+\
 **Admin and "Public" / End-user website**
 
 -   Hosted using Azure Web Apps
@@ -422,27 +447,29 @@ The following High-Level Diagram displays the overall, general architecture of t
 
 ## Checklist of preferred objection handling
 
-1.  Is there a service to automate transcription of the videos? Manual transcription is costly.
-    
+1.  Is there a service to automate transcription of the videos? Manual transcription is costly.\
+    \
     **Potential Answer**
 
     Microsoft has gone through a couple generations of transcription services and APIs over the years. The most recent and most accurate transcription functionality is contained within the Video Indexer service that is part of Cognitive Services. Video Indexer can easily generate transcripts for both audio and video.
 
-2.  There are plenty of video encoding tools out there, but what does Azure offer to do this more easily?\
-    
+<!-- -->
+
+1.  There are plenty of video encoding tools out there, but what does Azure offer to do this more easily?\
+    \
     **Potential Answer**
 
     The Video Indexer that is part of Cognitive Services provides a PaaS service that enables customers with digital and audio content to automatically extract metadata and use it to build intelligent innovative applications.
 
     Azure Media Services does offer video encoding and delivery as a PaaS service, but it is pretty "bare-bones" in its functionality.
 
-3.  Do we need to hire translators to translate the transcripts into other languages?\
-    
+2.  Do we need to hire translators to translate the transcripts into other languages?\
+    \
     **Potential Answer**
 
     The traditional path would be to hire translators to accurately translate content to different languages. The Video Indexer service, in addition to its transcription and other cognitive capabilities, can translate the transcriptions into many different supported languages without any effort on your part.
 
-4.  When we grow our library of content, how are we going to ensure the search capabilities stay responsive?
+3.  When we grow our library of content, how are we going to ensure the search capabilities stay responsive?
 
     **Potential Answer**
 

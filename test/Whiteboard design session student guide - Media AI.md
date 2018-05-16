@@ -1,8 +1,8 @@
-# Media AI
+Media AI
 
-## Whiteboard design session student guide
+Whiteboard design session student guide
 
-## March 2018
+March 2018
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
 
@@ -10,25 +10,25 @@ Microsoft may have patents, patent applications, trademarks, copyrights, or othe
 
 The names of manufacturers, products, or URLs are provided for informational purposes only and Microsoft makes no representations and warranties, either expressed, implied, or statutory, regarding these manufacturers or the use of the products with any Microsoft technologies. The inclusion of a manufacturer or product does not imply endorsement of Microsoft of the manufacturer or product. Links may be provided to third party sites. Such sites are not under the control of Microsoft and Microsoft is not responsible for the contents of any linked site or any link contained in a linked site, or any changes or updates to such sites. Microsoft is not responsible for webcasting or any other form of transmission received from any linked site. Microsoft is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement of Microsoft of the site or the products contained therein.
 
-2018 Microsoft Corporation. All rights reserved.
+?? 2018 Microsoft Corporation. All rights reserved.
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
-# Contents 
+# Contents {#contents .TOCHeading}
 
-[Media AI whiteboard design session student guide](#media-ai-whiteboard-design-session-student-guide)
+[Media AI whiteboard design session student guide 1](#media-ai-whiteboard-design-session-student-guide)
 
-[Abstract and learning objectives](#abstract-and-learning-objectives)
+[Abstract and learning objectives 1](#abstract-and-learning-objectives)
 
-[Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+[Step 1: Review the customer case study 1](#step-1-review-the-customer-case-study)
 
-[Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+[Step 2: Design a proof of concept solution 6](#step-2-design-a-proof-of-concept-solution)
 
-[Step 3: Present the solution](#step-3-present-the-solution)
+[Step 3: Present the solution 7](#step-3-present-the-solution)
 
-[Wrap-up](#wrap-up)
+[Wrap-up 8](#wrap-up)
 
-[Additional references](#additional-references)
+[Additional references 9](#additional-references)
 
 # Media AI whiteboard design session student guide
 
@@ -46,13 +46,13 @@ Students will be better able to build media applications including:
 
 ## Step 1: Review the customer case study 
 
-**Outcome**
+**Outcome **
 
 Analyze your customer's needs.
 
 #### Facilitator/subject matter expert (SME) presentation of customer case study 
 
-Time frame: 15 minutes
+Timeframe: 15 minutes
 
 Directions: With all participants in the session, the facilitator/SME presents an overview of the customer case study along with technical tips.
 
@@ -62,6 +62,7 @@ Directions: With all participants in the session, the facilitator/SME presents a
 
 3.  As a table team, review the following customer case study.
 
+####  
 
 #### Customer situation
 
@@ -75,6 +76,7 @@ Because of this changing landscape of getting further into the IT Training busin
 
 Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of the media and video services within the Microsoft Azure platform. However, she still has several questions to answer before making a final decision on the technology and platforms to use for implementation. The Contoso IT Development and Engineering teams do not have much experience with building and maintaining video streaming services, so they are a bit uncertain of what path to take with the design and architecture at this point. In initial conversations with the sales team, Mary has said, "We have a tremendous amount of Enterprise IT experience within our organization, we just need a little help figuring out the unknowns here."
 
+####  
 
 #### Customer needs 
 
@@ -114,11 +116,11 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 ## Step 2: Design a proof of concept solution
 
-**Outcome**
+**Outcome **
 
 Prepare to present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-Time frame: 60 minutes
+Timeframe: 60 minutes
 
 **Business needs**
 
@@ -128,7 +130,7 @@ Directions: With all participants at your table, answer the following questions 
 
 2.  What customer business needs do you need to address with your solution?
 
-**Design**
+**Design **
 
 Directions: With all participants at your table, respond to the following questions on a flip chart.
 
@@ -152,15 +154,15 @@ Prepare for a 15-minute chalk-talk style presentation to the customer.
 
 ## Step 3: Present the solution
 
-**Outcome**
+**Outcome **
 
 Present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-**Presentation**
+**Presentation **
 
-Time frame: 30 minutes
+Timeframe: 30 minutes
 
-**Directions**
+**Directions **
 
 1.  Pair with another table.
 
@@ -178,26 +180,41 @@ Time frame: 30 minutes
 
 ##  Wrap-up 
 
-Time frame: 15 minutes
+Timeframe: 15 minutes
 
 -   Tables reconvene with the larger group to hear a SME share the preferred solution for the case study.
 
 ##  Additional references
 
-|    |            |
-|----------|:-------------:|
-| Build custom video AI workflow with Video Indexer and Logic Apps | <https://azure.microsoft.com/en-us/blog/build-custom-video-ai-workflows-with-video-indexer-and-logic-apps>|
-| What is Azure Search?   | <https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search>  |
-| Getting Started with the Video Indexer API    | <https://azure.microsoft.com/en-us/blog/gettingstartedwiththevideoindexerapi>  |
-| Use Azure Video Indexer API    | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-use-apis>   |
-| Video Indexer API Signup |   <https://videobreakdown.portal.azure-api.net/>   |
-| Video Indexer Overview  | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview>       |
-| Web Apps Overview    | <https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview>  |
-| What are Logic Apps?  |  <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-what-are-logic-apps>  |
-| Introduction to Blob storage   |  <https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction>  |
-| Azure Media Services overview  |  <https://docs.microsoft.com/en-us/azure/media-services/media-services-overview>   |
-| Get started with delivering content on demand using .NET SDK  | <https://docs.microsoft.com/en-us/azure/media-services/media-services-dotnet-get-started>   |
-| Deliver content to customers  | <https://docs.microsoft.com/en-us/azure/media-services/media-services-deliver-content-overview>    |
-| Playback media with Media Player  | <https://docs.microsoft.com/en-us/azure/media-services/media-services-develop-video-players>  |
-| Overview of the Azure Content Delivery Network (CDN)  | <https://docs.microsoft.com/en-us/azure/cdn/cdn-overview>    |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| **Description **                                                 | > **Links **                                                                                                 |
++==================================================================+==============================================================================================================+
+| What is Azure Search?                                            | > <https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search>                                |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Build custom video AI workflow with Video Indexer and Logic Apps | > <https://azure.microsoft.com/en-us/blog/build-custom-video-ai-workflows-with-video-indexer-and-logic-apps> |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Getting Started with the Video Indexer API                       | > <https://azure.microsoft.com/en-us/blog/gettingstartedwiththevideoindexerapi>                              |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Use Azure Video Indexer API                                      | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-use-apis>             |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Video Indexer API Signup                                         | <https://videobreakdown.portal.azure-api.net/>                                                               |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Video Indexer Overview                                           | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview>             |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Web Apps Overview                                                | <https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview>                                |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| What are Logic Apps?                                             | <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-what-are-logic-apps>                           |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Introduction to Blob storage                                     | <https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction>                            |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Azure Media Services overview                                    | <https://docs.microsoft.com/en-us/azure/media-services/media-services-overview>                              |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Get started with delivering content on demand using .NET SDK     | <https://docs.microsoft.com/en-us/azure/media-services/media-services-dotnet-get-started>                    |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Deliver content to customers                                     | <https://docs.microsoft.com/en-us/azure/media-services/media-services-deliver-content-overview>              |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Playback media with Media Player                                 | <https://docs.microsoft.com/en-us/azure/media-services/media-services-develop-video-players>                 |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Overview of the Azure Content Delivery Network (CDN)             | <https://docs.microsoft.com/en-us/azure/cdn/cdn-overview>                                                    |
++------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
 
