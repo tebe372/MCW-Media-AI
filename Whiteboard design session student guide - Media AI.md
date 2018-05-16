@@ -1,3 +1,5 @@
+![](images/HeaderPic.png "Microsoft Cloud Workshops")
+
 # Media AI
 
 ## Whiteboard design session student guide
