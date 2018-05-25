@@ -17,20 +17,29 @@ The names of manufacturers, products, or URLs are provided for informational pur
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
 # Contents 
+<!-- TOC -->
 
-[Media AI whiteboard design session student guide](#media-ai-whiteboard-design-session-student-guide)
+- [Media AI](#media-ai)
+    - [Whiteboard design session student guide](#whiteboard-design-session-student-guide)
+    - [March 2018](#march-2018)
+- [Contents](#contents)
+- [Media AI whiteboard design session student guide](#media-ai-whiteboard-design-session-student-guide)
+    - [Abstract and learning objectives](#abstract-and-learning-objectives)
+    - [Step 1: Review the customer case study](#step-1--review-the-customer-case-study)
+        - [Facilitator/subject matter expert (SME) presentation of customer case study](#facilitator-subject-matter-expert-sme-presentation-of-customer-case-study)
+        - [Customer situation](#customer-situation)
+        - [Customer needs](#customer-needs)
+        - [](#)
+        - [Customer objections](#customer-objections)
+        - [Infographic for common scenarios](#infographic-for-common-scenarios)
+                - [Video-on-demand digital media](#video-on-demand-digital-media)
+                - [Keyword search/speech-to-text/OCR digital media](#keyword-search-speech-to-text-ocr-digital-media)
+    - [Step 2: Design a proof of concept solution](#step-2--design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3--present-the-solution)
+    - [Wrap-up](#wrap-up)
+    - [Additional references](#additional-references)
 
-[Abstract and learning objectives](#abstract-and-learning-objectives)
-
-[Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
-
-[Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
-
-[Step 3: Present the solution](#step-3-present-the-solution)
-
-[Wrap-up](#wrap-up)
-
-[Additional references](#additional-references)
+<!-- /TOC -->
 
 # Media AI whiteboard design session student guide
 
@@ -52,7 +61,7 @@ Students will be better able to build media applications including:
 
 Analyze your customer's needs.
 
-#### Facilitator/subject matter expert (SME) presentation of customer case study 
+### Facilitator/subject matter expert (SME) presentation of customer case study 
 
 Time frame: 15 minutes
 
@@ -65,7 +74,7 @@ Directions: With all participants in the session, the facilitator/SME presents a
 3.  As a table team, review the following customer case study.
 
 
-#### Customer situation
+### Customer situation
 
 Contoso Consulting is a mature consulting firm that has been in the IT Consulting business for over 30 years with clients all over the world. They have a history of mainly specializing in Microsoft technologies, but do have an established practice of offering Linux and OSS based consulting. The company has adapted to the ever-changing landscape of IT for a long time and has been involved in the training and adoption / transition process of many of its clients over the years. In addition to IT Consulting services, Contoso provides on-site and video-based training to their larger clients. This involves creating custom training content and course agendas based on the client's needs and project being delivered.
 
@@ -78,7 +87,7 @@ Because of this changing landscape of getting further into the IT Training busin
 Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of the media and video services within the Microsoft Azure platform. However, she still has several questions to answer before making a final decision on the technology and platforms to use for implementation. The Contoso IT Development and Engineering teams do not have much experience with building and maintaining video streaming services, so they are a bit uncertain of what path to take with the design and architecture at this point. In initial conversations with the sales team, Mary has said, "We have a tremendous amount of Enterprise IT experience within our organization, we just need a little help figuring out the unknowns here."
 
 
-#### Customer needs 
+### Customer needs 
 
 1.  The system must scale globally for their many clients all over the world, including new clients as Contoso grows their IT Training business
 
@@ -92,9 +101,9 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 6.  Use Serverless compute where possible to minimize overall maintenance and overhead cost
 
-####  
+###  
 
-#### Customer objections 
+### Customer objections 
 
 1.  Is there a service to automate transcription of the videos? Manual transcription is costly.
 
@@ -104,13 +113,13 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 4.  When we grow our library of content, how are we going to ensure the search capabilities stay responsive?
 
-#### Infographic for common scenarios
+### Infographic for common scenarios
 
-###### Video-on-demand digital media
+##### Video-on-demand digital media
 
 ![This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.](\Whiteboarddesignsessionstudentguide-MediaAIimages/media/image2.png "Common Video-on-demand scenarios infographic")
 
-###### Keyword search/speech-to-text/OCR digital media
+##### Keyword search/speech-to-text/OCR digital media
 
 ![This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.](\Whiteboarddesignsessionstudentguide-MediaAIimages/media/image3.png "Common keyword search/speech-to-text/OCR digital media infographic")
 
