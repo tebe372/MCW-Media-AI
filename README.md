@@ -1,3 +1,32 @@
+# Abstract
+
+## Workshop
+
+In this workshop, students will learn how to build, setup, and configure a Web Application that performs media streaming using Azure Services; including the Video Indexer API. Students will also learn how to implement video processing using Logic Apps, Azure Functions, and Video Indexer API to encode and transcribe videos.
+
+Students will be better able to build media applications including:
+
+-   Setup Video Indexer API
+
+-   Upload videos to Blob Storage to be encoded with Azure Video Indexer
+
+-   Integrate Video Indexer through Logic Apps and Azure Functions
+
+
+## Whiteboard Design Session
+TBD
+
+## Hand-on Lab
+TBD
+
+
+## Azure services and related products
+- Media Services
+- Logic Apps
+- Functions
+- Video Indexer API
+- App Services
+
 
 # Contributing
 

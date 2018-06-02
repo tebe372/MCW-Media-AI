@@ -1,10 +1,17 @@
 ![](images/HeaderPic.png "Microsoft Cloud Workshops")
 
-# Media AI
+<div class="MCWHeader1">
+Media AI
+</div>
 
-## Hands-on lab unguided
+<div class="MCWHeader2">
+Hands-on lab unguided
+</div>
 
-## March 2018
+<div class="MCWHeader3">
+March 2018
+</div>
+
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
 
@@ -16,102 +23,90 @@ The names of manufacturers, products, or URLs are provided for informational pur
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
-# Contents
+**Contents**
 
 <!-- TOC -->
 
-- [Media AI](#media-ai)
-    - [Hands-on lab unguided](#hands-on-lab-unguided)
-    - [March 2018](#march-2018)
-- [Contents](#contents)
-    - [Media AI hands-on lab unguided](#media-ai-hands-on-lab-unguided)
-    - [Abstract and learning objectives](#abstract-and-learning-objectives)
-    - [Overview](#overview)
-    - [Solution architecture](#solution-architecture)
-    - [Requirements](#requirements)
-    - [Before the hands-on lab](#before-the-hands-on-lab)
-        - [Prerequisites](#prerequisites)
-        - [Task 1: Configure a development environment](#task-1--configure-a-development-environment)
-        - [Task 2: Disable IE enhanced security](#task-2--disable-ie-enhanced-security)
-        - [Task 3: Update Visual Studio Tools for Azure Functions](#task-3--update-visual-studio-tools-for-azure-functions)
-        - [Task 4: Install Visual Studio Tools for Logic Apps](#task-4--install-visual-studio-tools-for-logic-apps)
-        - [Task 5: Validate connectivity to Azure](#task-5--validate-connectivity-to-azure)
-        - [Task 6: Download the exercise files](#task-6--download-the-exercise-files)
-    - [Exercise 1: Signup for Video Indexer API Service](#exercise-1--signup-for-video-indexer-api-service)
-        - [Task 1: Signup for Video Indexer](#task-1--signup-for-video-indexer)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 2: Copy Video Indexer API Key](#task-2--copy-video-indexer-api-key)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-    - [Exercise 2: Setup video import workflow](#exercise-2--setup-video-import-workflow)
-        - [Task 1: Create Storage Account for video files](#task-1--create-storage-account-for-video-files)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 2: Create Azure Logic App to process videos](#task-2--create-azure-logic-app-to-process-videos)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-    - [Exercise 3: Enable admin website to upload videos](#exercise-3--enable-admin-website-to-upload-videos)
-        - [Task 1: Provision Cosmos DB Account](#task-1--provision-cosmos-db-account)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 2: Integrate Cosmos DB into Admin Website](#task-2--integrate-cosmos-db-into-admin-website)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 3: Integrate File Upload into Admin Web App](#task-3--integrate-file-upload-into-admin-web-app)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 4: Add ability to delete video](#task-4--add-ability-to-delete-video)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 5: Deploy Admin website to an Azure Web App](#task-5--deploy-admin-website-to-an-azure-web-app)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 6: Configure Application Settings](#task-6--configure-application-settings)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-    - [Exercise 4: Update video status when processing is complete](#exercise-4--update-video-status-when-processing-is-complete)
-        - [Task 1: Create Azure Function](#task-1--create-azure-function)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 2: Update Cosmos DB Document with Video Processing State](#task-2--update-cosmos-db-document-with-video-processing-state)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 3: Update Video State when processing is complete](#task-3--update-video-state-when-processing-is-complete)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-    - [Exercise 5: Add Video Player to Front-End Application](#exercise-5--add-video-player-to-front-end-application)
-        - [Task 1: Integrate Cosmos DB into Front-End Application](#task-1--integrate-cosmos-db-into-front-end-application)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 2: Display Video Thumbnail Image](#task-2--display-video-thumbnail-image)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 3: Add Video Player](#task-3--add-video-player)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 4: Add Video Insights](#task-4--add-video-insights)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 5: Integrate Video Player and Insights together](#task-5--integrate-video-player-and-insights-together)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 6: Deploy Public website to an Azure Web App](#task-6--deploy-public-website-to-an-azure-web-app)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 7: Configure Application Settings](#task-7--configure-application-settings)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-    - [Exercise 6: Test the application](#exercise-6--test-the-application)
-        - [Task 1: Upload Video to Admin website](#task-1--upload-video-to-admin-website)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [Task 2: View Video and Insights in Public website](#task-2--view-video-and-insights-in-public-website)
-                - [Tasks to complete](#tasks-to-complete)
-                - [Exit criteria](#exit-criteria)
-        - [](#)
-    - [After the hands-on lab](#after-the-hands-on-lab)
-        - [Task 1: Delete resources](#task-1--delete-resources)
+- [Media AI hands-on lab unguided](#media-ai-hands-on-lab-unguided)
+- [Abstract and learning objectives](#abstract-and-learning-objectives)
+- [Overview](#overview)
+- [Solution architecture](#solution-architecture)
+- [Requirements](#requirements)
+- [Exercise 1: Signup for Video Indexer API Service](#exercise-1-signup-for-video-indexer-api-service)
+    - [Task 1: Signup for Video Indexer](#task-1-signup-for-video-indexer)
+        - [Tasks to complete](#tasks-to-complete)
+        - [Exit criteria](#exit-criteria)
+    - [Task 2: Copy Video Indexer API Key](#task-2-copy-video-indexer-api-key)
+        - [Tasks to complete](#tasks-to-complete-1)
+        - [Exit criteria](#exit-criteria-1)
+- [Exercise 2: Setup video import workflow](#exercise-2-setup-video-import-workflow)
+    - [Task 1: Create Storage Account for video files](#task-1-create-storage-account-for-video-files)
+        - [Tasks to complete](#tasks-to-complete-2)
+        - [Exit criteria](#exit-criteria-2)
+    - [Task 2: Create Azure Logic App to process videos](#task-2-create-azure-logic-app-to-process-videos)
+        - [Tasks to complete](#tasks-to-complete-3)
+        - [Exit criteria](#exit-criteria-3)
+- [Exercise 3: Enable admin website to upload videos](#exercise-3-enable-admin-website-to-upload-videos)
+    - [Task 1: Provision Cosmos DB Account](#task-1-provision-cosmos-db-account)
+        - [Tasks to complete](#tasks-to-complete-4)
+        - [Exit criteria](#exit-criteria-4)
+    - [Task 2: Integrate Cosmos DB into Admin Website](#task-2-integrate-cosmos-db-into-admin-website)
+        - [Tasks to complete](#tasks-to-complete-5)
+        - [Exit criteria](#exit-criteria-5)
+    - [Task 3: Integrate File Upload into Admin Web App](#task-3-integrate-file-upload-into-admin-web-app)
+        - [Tasks to complete](#tasks-to-complete-6)
+        - [Exit criteria](#exit-criteria-6)
+    - [Task 4: Add ability to delete video](#task-4-add-ability-to-delete-video)
+        - [Tasks to complete](#tasks-to-complete-7)
+        - [Exit criteria](#exit-criteria-7)
+    - [Task 5: Deploy Admin website to an Azure Web App](#task-5-deploy-admin-website-to-an-azure-web-app)
+        - [Tasks to complete](#tasks-to-complete-8)
+        - [Exit criteria](#exit-criteria-8)
+    - [Task 6: Configure Application Settings](#task-6-configure-application-settings)
+        - [Tasks to complete](#tasks-to-complete-9)
+        - [Exit criteria](#exit-criteria-9)
+- [Exercise 4: Update video status when processing is complete](#exercise-4-update-video-status-when-processing-is-complete)
+    - [Task 1: Create Azure Function](#task-1-create-azure-function)
+        - [Tasks to complete](#tasks-to-complete-10)
+        - [Exit criteria](#exit-criteria-10)
+    - [Task 2: Update Cosmos DB Document with Video Processing State](#task-2-update-cosmos-db-document-with-video-processing-state)
+        - [Tasks to complete](#tasks-to-complete-11)
+        - [Exit criteria](#exit-criteria-11)
+    - [Task 3: Update Video State when processing is complete](#task-3-update-video-state-when-processing-is-complete)
+        - [Tasks to complete](#tasks-to-complete-12)
+        - [Exit criteria](#exit-criteria-12)
+- [Exercise 5: Add Video Player to Front-End Application](#exercise-5-add-video-player-to-front-end-application)
+    - [Task 1: Integrate Cosmos DB into Front-End Application](#task-1-integrate-cosmos-db-into-front-end-application)
+        - [Tasks to complete](#tasks-to-complete-13)
+        - [Exit criteria](#exit-criteria-13)
+    - [Task 2: Display Video Thumbnail Image](#task-2-display-video-thumbnail-image)
+        - [Tasks to complete](#tasks-to-complete-14)
+        - [Exit criteria](#exit-criteria-14)
+    - [Task 3: Add Video Player](#task-3-add-video-player)
+        - [Tasks to complete](#tasks-to-complete-15)
+        - [Exit criteria](#exit-criteria-15)
+    - [Task 4: Add Video Insights](#task-4-add-video-insights)
+        - [Tasks to complete](#tasks-to-complete-16)
+        - [Exit criteria](#exit-criteria-16)
+    - [Task 5: Integrate Video Player and Insights together](#task-5-integrate-video-player-and-insights-together)
+        - [Tasks to complete](#tasks-to-complete-17)
+        - [Exit criteria](#exit-criteria-17)
+    - [Task 6: Deploy Public website to an Azure Web App](#task-6-deploy-public-website-to-an-azure-web-app)
+        - [Tasks to complete](#tasks-to-complete-18)
+        - [Exit criteria](#exit-criteria-18)
+    - [Task 7: Configure Application Settings](#task-7-configure-application-settings)
+        - [Tasks to complete](#tasks-to-complete-19)
+        - [Exit criteria](#exit-criteria-19)
+- [Exercise 6: Test the application](#exercise-6-test-the-application)
+    - [Task 1: Upload Video to Admin website](#task-1-upload-video-to-admin-website)
+        - [Tasks to complete](#tasks-to-complete-20)
+        - [Exit criteria](#exit-criteria-20)
+    - [Task 2: View Video and Insights in Public website](#task-2-view-video-and-insights-in-public-website)
+        - [Tasks to complete](#tasks-to-complete-21)
+        - [Exit criteria](#exit-criteria-21)
+    - [](#)
+- [After the hands-on lab](#after-the-hands-on-lab)
+    - [Task 1: Delete resources](#task-1-delete-resources)
 
 <!-- /TOC -->
 
@@ -145,97 +140,6 @@ Contoso has asked you to build a media streaming service so they can deliver the
 
     -   Visual Studio 2017 Community Edition or later
 
-## Before the hands-on lab
-
-Duration: 30 minutes
-
-In this lab, you will create a developer environment and download the required files for this course if you do not already have one that meets the requirements.
-
-### Prerequisites
-
-1.  Microsoft Azure subscription <http://azure.microsoft.com/en-us/pricing/free-trial/>
-
-2.  Client computer with Windows 7 or later with Visual Studio 2017
-
-### Task 1: Configure a development environment
-
-If you do not have a machine setup with Visual Studio 2017 Community complete this task.
-
-1.  Create a virtual machine in Azure using the **Visual Studio Community 2017 (latest release) on Windows Server 2016 (x64)** image. This is important as you need to have Visual Studio 2017 version 15.4 or later to complete this lab.
-
-    ![In this screenshot, visual studio community 2017 is entered in a search box, and the Visual Studio Community 2017 (latest release) on Windows Server 2016 (x64) row is selected and highlighted in the search results.](images/Hands-onlabunguided-MediaAIimages/media/image3.png "Use the image above to create a virtual machine in Azure")
-
-It is **highly** recommended to use a DS2 or D2 instance size for this VM.
-
-### Task 2: Disable IE enhanced security
-
-Note: Sometimes this image has IE ESC disabled, and sometimes it does not.
-
-1.  On the new VM, you just created click the Server Manager icon
-
-    ![Server Manager is highlighted on the taskbar.](images/Hands-onlabunguided-MediaAIimages/media/image4.png "Select Server Manager")
-
-2.  Click Local Server
-
-    ![In Server Manager, Local Server is selected and highlighted in the navigation pane.](images/Hands-onlabunguided-MediaAIimages/media/image5.png "Select Local Server")
-
-3.  On the right side of the pane, click **On** by IE Enhanced Security Configuration
-
-    ![On is highlighted next to IE Enhanced Security Configuration.](images/Hands-onlabunguided-MediaAIimages/media/image6.png "Turn IE Enhanced Security Configuration on")
-
-4.  Change to **Off** for Administrators and click **OK**
-
-    ![Off is selected and highlighted under Administrators in the IE Enhanced Security Configuration dialog box, and OK is highlighted at the bottom.](images/Hands-onlabunguided-MediaAIimages/media/image7.png "Turn Administrators off")
-
-### Task 3: Update Visual Studio Tools for Azure Functions
-
-1.  Open Visual Studio 2017, then click on the **Tools** menu, then click on **Extensions and Updates...\
-    **![In Visual Studio 2017, the Tools menu is highlighted and labeled 1, and Extensions and Updates is selected, highlighted, and labeled 2 in the submenu.](images/Hands-onlabunguided-MediaAIimages/media/image8.png "Select Extensions and Updates")
-
-2.  On the Extensions and Updates dialog, click on **Updates**, then **Visual Studio Marketplace** on the left side of the dialog, then click on **Update** for the **Azure Functions and Web Jobs Tools** extension to update to the latest version**\
-    **![Updates (labeled 1) and Visual Studio Marketplace (labeled 2) are highlighted on the left side of the Extensions and Updates dialog box, and the Update button and the Azure Functions and Web Jobs Tools extension (labeled 3) are selected and highlighted on the right.](images/Hands-onlabunguided-MediaAIimages/media/image9.png "Update Azure Functions and Web Jobs Tools")
-
-### Task 4: Install Visual Studio Tools for Logic Apps
-
-1.  Within the **Extensions and Updates** dialog within Visual Studio 2017 sill open from the previous task, click on the **Online** category on the left side of the dialog.\
-    ![Online is highlighted on the left side of the Extensions and Updates dialog box.](images/Hands-onlabunguided-MediaAIimages/media/image10.png "Select the Online category")
-
-2.  In the **Search** box in the upper right of the dialog, type in **Azure Logic Apps** to search for the **Azure Logic Apps Tools for Visual Studio** extension. Then click **Download** on the Extension to install it.\
-    ![Search Results is highlighted on the left side of the Extensions and Updates dialog box, Azure Logic Apps is highlighted on the top right (labeled 1), and the Download button and the Azure Logic Apps Tools for Visual Studio extension (labeled 2) are selected and highlighted in the middle.](images/Hands-onlabunguided-MediaAIimages/media/image11.png "Download Azure Logic Apps Tools for Visual Studio")
-    
-
-3.  Click **Close** on the **Extensions and Updated** dialog![Search Results is highlighted on the left side of the Extensions and Updates dialog box, Azure Logic Apps Tools for Visual Studio is selected in the middle, and Close is highlighted on the bottom right.](images/Hands-onlabunguided-MediaAIimages/media/image12.png "Close the Extensions and Updated dialog box")
-
-4.  Close Visual Studio, the pending installation of the Azure Logic Apps Tools for Visual Studio will automatically launch
-
-5.  On the **VSIX Installer** dialog, click on **Modify**\
-    ![Modify is highlighted at the bottom of the VSIX Installer dialog box.](images/Hands-onlabunguided-MediaAIimages/media/image13.png "Select Modify")
-
-6.  Wait for the extension to be installed, this should only take about 1 minute\
-    ![A progress bar is displayed in the VSIX Installer dialog box.](images/Hands-onlabunguided-MediaAIimages/media/image14.png "Wait for the extension to install")
-
-7.  Once installation is complete, click **Close**\
-    ![A Modifications Complete message is displayed in the VSIX Installer dialog box.](images/Hands-onlabunguided-MediaAIimages/media/image15.png "Close the installer")
-
-8.  Restart Visual Studio now that the extension has been installed
-
-### Task 5: Validate connectivity to Azure
-
-1.  From within the virtual machine, Launch Visual Studio 2017 and validate that you can login with your Microsoft Account when prompted
-
-2.  Validate connectivity to your Azure subscription. Launch Visual Studio, open Server Explorer from the View menu, and ensure that you can connect to your Azure subscription
-
-    ![An Azure subscription is highlighted in Server Explorer, and the submenu is displayed with an option to connect to your Azure subscription.](images/Hands-onlabunguided-MediaAIimages/media/image16.png "Validate connectivity")
-
-### Task 6: Download the exercise files 
-
-1.  Download the exercise files for the training (from within the virtual machine)
-
-    a.  Create a new folder on your computer named **C:\\Hackathon**
-
-    b.  Download the support files (.zip format), <https://cloudworkshop.blob.core.windows.net/media-services-and-cdn/Media-Services-Student-Files.zip> to the new folder.
-
-    c.  Extract the contents to the same folder
 
 ## Exercise 1: Signup for Video Indexer API Service
 
@@ -245,23 +149,23 @@ In this exercise, you will setup the Video Indexer API within Microsoft Azure.
 
 ### Task 1: Signup for Video Indexer
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Signup for an account for the **Video Indexer API**: <https://videobreakdown.portal.azure-api.net/>
 
 2.  Subscribe to the **Free Preview** API Product Subscription
 
-##### Exit criteria
+#### Exit criteria
 
 -   You have an Account and Subscription to the **Free Preview** API Product within the **Video Indexer API**
 
 ### Task 2: Copy Video Indexer API Key
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Locate the **API Key** for your **Video Indexer API Free Preview Subscription**
 
-##### Exit criteria
+#### Exit criteria
 
 -   You've copied the **Video Indexer API Key** from your Subscription for later use
 
@@ -273,25 +177,25 @@ In this exercise, you will set the import workflow for uploading and importing v
 
 ### Task 1: Create Storage Account for video files
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Create a Storage Account that can be used to upload video files to
 
     a.  The Storage Account should have a Blob Container named **videos**
 
-##### Exit criteria
+#### Exit criteria
 
 -   You have a Storage Account to use for uploading videos within the Application
 
 ### Task 2: Create Azure Logic App to process videos
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Create a new Azure Logic App that is triggered when a new Blob is saved in the Storage Account
 
 2.  The Logic App integrates the Video Indexer Connector to upload and index the uploaded video
 
-##### Exit criteria
+#### Exit criteria
 
 -   A Logic App has been created that is triggered by a new Blob in the Storage Account, then passes that video file to the Video Indexer Connector for processing
 
@@ -303,41 +207,41 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
 ### Task 1: Provision Cosmos DB Account
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Provision an Azure Cosmos DB Account that will be used as the backend database for the application
 
-##### Exit criteria
+#### Exit criteria
 
 -   The Azure Cosmos DB Account should be provisioned using the **SQL API**, plus have a Database named **learning**, a Collection named **videos**
 
 ### Task 2: Integrate Cosmos DB into Admin Website
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Add code to the **ContosoLearning.Data** and **ContosoLearning.Web.Admin** projects so that the Data Access Layer (DAL) is coded to work with using the Azure Cosmos DB Account as the backend database for the application
 
-##### Exit criteria
+#### Exit criteria
 
 -   The **Get**, **GetAll**, **Insert**, and **Delete** data access methods have code that integrates with Azure Cosmos DB
 
 ### Task 3: Integrate File Upload into Admin Web App
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Add File Upload capabilities to the Admin Website application so admin users can upload new videos
 
-##### Exit criteria
+#### Exit criteria
 
 -   Videos can be uploaded through the Admin website and saved to Azure Storage
 
 ### Task 4: Add ability to delete video
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Modify the **ContosoLearning.Web.Admin** website application so that the **Delete** code for deleting videos is completed
 
-##### Exit criteria
+#### Exit criteria
 
 -   Admin users can delete videos that have been previously uploaded
 
@@ -345,21 +249,21 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
 ### Task 5: Deploy Admin website to an Azure Web App
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Deploy the **Admin** website application to be hosted within an Azure Web App
 
-##### Exit criteria
+#### Exit criteria
 
 -   The **Admin** website is hosted in an Azure Web App
 
 ### Task 6: Configure Application Settings
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Configure the **Application Settings** for the Azure Web App that's hosting the **Admin** website application
 
-##### Exit criteria
+#### Exit criteria
 
 -   The Admin website's Application Settings have been configured
 
@@ -371,11 +275,11 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 
 ### Task 1: Create Azure Function
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Create an Azure Function that can be called by the Azure Logic App
 
-##### Exit criteria
+#### Exit criteria
 
 -   A new Azure Function was created.
 
@@ -383,11 +287,11 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 
 ### Task 2: Update Cosmos DB Document with Video Processing State
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Code the Azure Function so it can update the Cosmos DB Document for the Video with the current **Processing State** for the video within Azure Video Indexer
 
-##### Exit criteria
+#### Exit criteria
 
 -   The Azure Function has an **Input binding,** so it can read and write the Document for the **documentId** passed to the function from the Logic App
 
@@ -395,11 +299,11 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 
 ### Task 3: Update Video State when processing is complete
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Update the Azure Logic App to integrate the Azure Function that was created
 
-##### Exit criteria
+#### Exit criteria
 
 -   The Azure Logic App calls the Azure Function (by passing **documentId** and **videoId**) periodically while the video is processing to update status, as well as calling it again when processing is completed
 
@@ -411,11 +315,11 @@ In this exercise, you will extend the Front-End Application foundation to includ
 
 ### Task 1: Integrate Cosmos DB into Front-End Application
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Update the **ContosoLearning.Web.Public** application project to include code that integrates the Azure Cosmos DB Collection as the database backend
 
-##### Exit criteria
+#### Exit criteria
 
 -   The **Index** list page displays a list of all Videos in the database
 
@@ -423,61 +327,61 @@ In this exercise, you will extend the Front-End Application foundation to includ
 
 ### Task 2: Display Video Thumbnail Image
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Add display of the Video Thumbnail images to the **Index** list page by populating the **ThumbnailUrl** property by calling the **Video Indexer API**
 
-##### Exit criteria
+#### Exit criteria
 
 -   When the **Index** list page is displayed, the Thumbnail Images for Videos in the database are shown in the UI
 
 ### Task 3: Add Video Player
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Add the Video Player from Video Indexer to the **Video** view / page
 
-##### Exit criteria
+#### Exit criteria
 
 -   The **Video** view / page in the application shows the video player for the Video being shown
 
 ### Task 4: Add Video Insights
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Add the Video Insights from Video Indexer to the **Video** view / page
 
-##### Exit criteria
+#### Exit criteria
 
 -   The **Video** view / page in the application shows the Video Insights from Video Indexer next to the Video Player
 
 ### Task 5: Integrate Video Player and Insights together
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Integrate the Video Player and Video Insights from Video Insights
 
-##### Exit criteria
+#### Exit criteria
 
 -   The Video Player and Video Insights UI within the **Video** page / view in the application interact when the video is playing so the Video Insights enhance the Video Player experience
 
 ### Task 6: Deploy Public website to an Azure Web App
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Deploy the **Public** website application to be hosted within an Azure Web App
 
-##### Exit criteria
+#### Exit criteria
 
 -   The **Public** website is hosted in an Azure Web App
 
 ### Task 7: Configure Application Settings
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Configure the **Application Settings** for the Azure Web App that's hosting the **Public** website application
 
-##### Exit criteria
+#### Exit criteria
 
 -   The Public website's Application Settings have been configured
 
@@ -489,21 +393,21 @@ In this exercise, you will test out the Admin and Public web applications.
 
 ### Task 1: Upload Video to Admin website
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Use the **Admin** website to upload at least 1 video
 
-##### Exit criteria
+#### Exit criteria
 
 -   Videos can be uploaded through the **Admin** website
 
 ### Task 2: View Video and Insights in Public website
 
-##### Tasks to complete
+#### Tasks to complete
 
 1.  Access the **Public** website to play Videos and view their Video Insights
 
-##### Exit criteria
+#### Exit criteria
 
 -   The **Public** website displays a list of Videos in the database along with Thumbnail images for each video
 

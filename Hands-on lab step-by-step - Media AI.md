@@ -1,10 +1,18 @@
 ![](images/HeaderPic.png "Microsoft Cloud Workshops")
 
-# Media AI
+<div class="MCWHeader1">
+Media AI
+</div>
 
-## Hands-on lab step-by-step
+<div class="MCWHeader2">
+Hands-on lab step-by-step
+</div>
 
-## March 2018
+<div class="MCWHeader3">
+March 2018
+</div>
+
+
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
 
@@ -16,57 +24,45 @@ The names of manufacturers, products, or URLs are provided for informational pur
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
-# Contents
+**Contents**
 
 <!-- TOC -->
 
-- [Media AI](#media-ai)
-    - [Hands-on lab step-by-step](#hands-on-lab-step-by-step)
-    - [March 2018](#march-2018)
-- [Contents](#contents)
-    - [Media AI hands-on lab step-by-step](#media-ai-hands-on-lab-step-by-step)
-    - [Abstract and learning objectives](#abstract-and-learning-objectives)
-    - [Overview](#overview)
-    - [Solution architecture](#solution-architecture)
-    - [Requirements](#requirements)
-    - [Before the hands-on lab](#before-the-hands-on-lab)
-        - [Prerequisites](#prerequisites)
-        - [Task 1: Configure a development environment](#task-1--configure-a-development-environment)
-        - [Task 2: Disable IE enhanced security](#task-2--disable-ie-enhanced-security)
-        - [Task 3: Update Visual Studio Tools for Azure Functions](#task-3--update-visual-studio-tools-for-azure-functions)
-        - [Task 4: Install Visual Studio Tools for Logic Apps](#task-4--install-visual-studio-tools-for-logic-apps)
-        - [Task 5: Validate connectivity to Azure](#task-5--validate-connectivity-to-azure)
-        - [Task 6: Download the exercise files](#task-6--download-the-exercise-files)
-    - [Exercise 1: Signup for Video Indexer API Service](#exercise-1--signup-for-video-indexer-api-service)
-        - [Task 1: Signup for Video Indexer](#task-1--signup-for-video-indexer)
-        - [Task 2: Copy Video Indexer API Key](#task-2--copy-video-indexer-api-key)
-    - [Exercise 2: Setup video import workflow](#exercise-2--setup-video-import-workflow)
-        - [Task 1: Create Storage Account for video files](#task-1--create-storage-account-for-video-files)
-        - [Task 2: Create Azure Logic App to process videos](#task-2--create-azure-logic-app-to-process-videos)
-    - [Exercise 3: Enable admin website to upload videos](#exercise-3--enable-admin-website-to-upload-videos)
-        - [Task 1: Provision Cosmos DB Account](#task-1--provision-cosmos-db-account)
-        - [Task 2: Integrate Cosmos DB into Admin Web App](#task-2--integrate-cosmos-db-into-admin-web-app)
-        - [Task 3: Integrate File Upload into Admin Web App](#task-3--integrate-file-upload-into-admin-web-app)
-        - [Task 4: Add ability to delete video](#task-4--add-ability-to-delete-video)
-        - [Task 5: Deploy Admin website to an Azure Web App](#task-5--deploy-admin-website-to-an-azure-web-app)
-        - [Task 6: Configure Application Settings](#task-6--configure-application-settings)
-    - [Exercise 4: Update video status when processing is complete](#exercise-4--update-video-status-when-processing-is-complete)
-        - [Step 1: Create Azure Function](#step-1--create-azure-function)
-        - [Step 2: Update Cosmos DB Document with Video Processing State](#step-2--update-cosmos-db-document-with-video-processing-state)
-        - [Step 3: Update Video State when processing is complete](#step-3--update-video-state-when-processing-is-complete)
-    - [Exercise 5: Add Video Player to Front-End Application](#exercise-5--add-video-player-to-front-end-application)
-        - [Step 1: Integrate Cosmos DB into Front-End Application](#step-1--integrate-cosmos-db-into-front-end-application)
-        - [Step 2: Display Video Thumbnail Image](#step-2--display-video-thumbnail-image)
-        - [Step 3: Add Video Player](#step-3--add-video-player)
-        - [Step 4: Add Video Insights](#step-4--add-video-insights)
-        - [Step 5: Integrate Video Player and Insights together](#step-5--integrate-video-player-and-insights-together)
-        - [Step 6: Deploy Public website to an Azure Web App](#step-6--deploy-public-website-to-an-azure-web-app)
-        - [Step 7: Configure Application Settings](#step-7--configure-application-settings)
-    - [Exercise 6: Test the application](#exercise-6--test-the-application)
-        - [Step 1: Upload Video to Admin website](#step-1--upload-video-to-admin-website)
-        - [Step 2: View Video and Insights in Public website](#step-2--view-video-and-insights-in-public-website)
-    - [After the hands-on lab](#after-the-hands-on-lab)
-        - [Task 1: Delete resources](#task-1--delete-resources)
+- [Media AI hands-on lab step-by-step](#media-ai-hands-on-lab-step-by-step)
+- [Abstract and learning objectives](#abstract-and-learning-objectives)
+- [Overview](#overview)
+- [Solution architecture](#solution-architecture)
+- [Requirements](#requirements)
+- [Exercise 1: Signup for Video Indexer API Service](#exercise-1-signup-for-video-indexer-api-service)
+    - [Task 1: Signup for Video Indexer](#task-1-signup-for-video-indexer)
+    - [Task 2: Copy Video Indexer API Key](#task-2-copy-video-indexer-api-key)
+- [Exercise 2: Setup video import workflow](#exercise-2-setup-video-import-workflow)
+    - [Task 1: Create Storage Account for video files](#task-1-create-storage-account-for-video-files)
+    - [Task 2: Create Azure Logic App to process videos](#task-2-create-azure-logic-app-to-process-videos)
+- [Exercise 3: Enable admin website to upload videos](#exercise-3-enable-admin-website-to-upload-videos)
+    - [Task 1: Provision Cosmos DB Account](#task-1-provision-cosmos-db-account)
+    - [Task 2: Integrate Cosmos DB into Admin Web App](#task-2-integrate-cosmos-db-into-admin-web-app)
+    - [Task 3: Integrate File Upload into Admin Web App](#task-3-integrate-file-upload-into-admin-web-app)
+    - [Task 4: Add ability to delete video](#task-4-add-ability-to-delete-video)
+    - [Task 5: Deploy Admin website to an Azure Web App](#task-5-deploy-admin-website-to-an-azure-web-app)
+    - [Task 6: Configure Application Settings](#task-6-configure-application-settings)
+- [Exercise 4: Update video status when processing is complete](#exercise-4-update-video-status-when-processing-is-complete)
+    - [Step 1: Create Azure Function](#step-1-create-azure-function)
+    - [Step 2: Update Cosmos DB Document with Video Processing State](#step-2-update-cosmos-db-document-with-video-processing-state)
+    - [Step 3: Update Video State when processing is complete](#step-3-update-video-state-when-processing-is-complete)
+- [Exercise 5: Add Video Player to Front-End Application](#exercise-5-add-video-player-to-front-end-application)
+    - [Step 1: Integrate Cosmos DB into Front-End Application](#step-1-integrate-cosmos-db-into-front-end-application)
+    - [Step 2: Display Video Thumbnail Image](#step-2-display-video-thumbnail-image)
+    - [Step 3: Add Video Player](#step-3-add-video-player)
+    - [Step 4: Add Video Insights](#step-4-add-video-insights)
+    - [Step 5: Integrate Video Player and Insights together](#step-5-integrate-video-player-and-insights-together)
+    - [Step 6: Deploy Public website to an Azure Web App](#step-6-deploy-public-website-to-an-azure-web-app)
+    - [Step 7: Configure Application Settings](#step-7-configure-application-settings)
+- [Exercise 6: Test the application](#exercise-6-test-the-application)
+    - [Step 1: Upload Video to Admin website](#step-1-upload-video-to-admin-website)
+    - [Step 2: View Video and Insights in Public website](#step-2-view-video-and-insights-in-public-website)
+- [After the hands-on lab](#after-the-hands-on-lab)
+    - [Task 1: Delete resources](#task-1-delete-resources)
 
 <!-- /TOC -->
 
@@ -100,96 +96,6 @@ Contoso has asked you to build a media streaming service so they can deliver the
 
 -   Visual Studio 2017 Community Edition or later
 
-## Before the hands-on lab
-
-Duration: 30 minutes
-
-In this lab, you will create a developer environment and download the required files for this course if you do not already have one that meets the requirements.
-
-### Prerequisites
-
-1.  Microsoft Azure subscription <http://azure.microsoft.com/en-us/pricing/free-trial/>
-
-2.  Client computer with Windows 7 or later with Visual Studio 2017
-
-### Task 1: Configure a development environment
-
-If you do not have a machine setup with Visual Studio 2017 Community complete this task.
-
-1.  Create a virtual machine in Azure using the **Visual Studio Community 2017 (latest release) on Windows Server 2016 (x64)** image. This is important as you need to have Visual Studio 2017 version 15.4 or later to complete this lab.
-
-    ![In this screenshot, visual studio community 2017 is entered in a search box, and the Visual Studio Community 2017 (latest release) on Windows Server 2016 (x64) row is selected and highlighted in the search results.](images/Hands-onlabstep-by-step-MediaAIimages/media/image3.png "Use the image above to create a virtual machine in Azure")
-
-    > It is **highly** recommended to use a DS2 or D2 instance size for this VM.
-
-### Task 2: Disable IE enhanced security
-
-Note: Sometimes this image has IE ESC disabled, and sometimes it does not.
-
-1.  On the new VM, you just created click the Server Manager icon
-
-    ![Server Manager is highlighted on the taskbar.](images/Hands-onlabstep-by-step-MediaAIimages/media/image4.png "Select Server Manager")
-
-2.  Click Local Server
-
-    ![In Server Manager, Local Server is selected and highlighted in the navigation pane.](images/Hands-onlabstep-by-step-MediaAIimages/media/image5.png "Select Local Server")
-
-3.  On the right side of the pane, click **On** by IE Enhanced Security Configuration
-
-    ![On is highlighted next to IE Enhanced Security Configuration.](images/Hands-onlabstep-by-step-MediaAIimages/media/image6.png "Turn IE Enhanced Security Configuration on")
-
-4.  Change to **Off** for Administrators and click **OK**
-
-    ![Off is selected and highlighted under Administrators in the IE Enhanced Security Configuration dialog box, and OK is highlighted at the bottom.](images/Hands-onlabstep-by-step-MediaAIimages/media/image7.png "Turn Administrators off")
-
-### Task 3: Update Visual Studio Tools for Azure Functions
-
-1.  Open Visual Studio 2017, then click on the **Tools** menu, then click on **Extensions and Updates...\
-    **![In Visual Studio 2017, the Tools menu is highlighted and labeled 1, and Extensions and Updates is selected, highlighted, and labeled 2 in the submenu.](images/Hands-onlabstep-by-step-MediaAIimages/media/image8.png "Select Extensions and Updates")
-
-2.  On the Extensions and Updates dialog, click on **Updates** then **Visual Studio Marketplace** on the left side of the dialog, then click on **Update** for the **Azure Functions and Web Jobs Tools** extension to update to the latest version.
-    ![Updates (labeled 1) and Visual Studio Marketplace (labeled 2) are highlighted on the left side of the Extensions and Updates dialog box, and the Update button and the Azure Functions and Web Jobs Tools extension (labeled 3) are selected and highlighted on the right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image9.png "Update Azure Functions and Web Jobs Tools")
-
-### Task 4: Install Visual Studio Tools for Logic Apps
-
-1.  Within the **Extensions and Updates** dialog within Visual Studio 2017 sill open from the previous task, click on the **Online** category on the left side of the dialog.
-    ![Online is highlighted on the left side of the Extensions and Updates dialog box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image10.png "Select the Online category")
-
-2.  In the **Search** box in the upper right of the dialog, type in **Azure Logic Apps** to search for the **Azure Logic Apps Tools for Visual Studio** extension. Then click **Download** on the Extension to install it.
-    ![Search Results is highlighted on the left side of the Extensions and Updates dialog box, Azure Logic Apps is highlighted on the top right (labeled 1), and the Download button and the Azure Logic Apps Tools for Visual Studio extension (labeled 2) are selected and highlighted in the middle.](images/Hands-onlabstep-by-step-MediaAIimages/media/image11.png "Download Azure Logic Apps Tools for Visual Studio")
-
-3.  Click **Close** on the **Extensions and Updated** dialog![Search Results is highlighted on the left side of the Extensions and Updates dialog box, Azure Logic Apps Tools for Visual Studio is selected in the middle, and Close is highlighted on the bottom right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image12.png "Close the Extensions and Updated dialog box")
-
-4.  Close Visual Studio, then the pending installation of the Azure Logic Apps Tools for Visual Studio will automatically launch
-
-5.  On the **VSIX Installer** dialog, click on **Modify**
-    ![Modify is highlighted at the bottom of the VSIX Installer dialog box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image13.png "Select Modify")
-
-6.  Wait for the extension to be installed, this should only take about 1 minute\
-    ![A progress bar is displayed in the VSIX Installer dialog box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image14.png "Wait for the extension to install")
-
-7.  Once installation is complete, click **Close**\
-    ![A Modifications Complete message is displayed in the VSIX Installer dialog box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image15.png "Close the installer")
-
-8.  Restart Visual Studio now that the extension has been installed
-
-### Task 5: Validate connectivity to Azure
-
-1.  From within the virtual machine, Launch Visual Studio 2017 and validate that you can login with your Microsoft Account when prompted
-
-2.  Validate connectivity to your Azure subscription. Launch Visual Studio, open Server Explorer from the View menu, and ensure that you can connect to your Azure subscription.
-
-    ![An Azure subscription is highlighted in Server Explorer, and the submenu is displayed with an option to connect to your Azure subscription.](images/Hands-onlabstep-by-step-MediaAIimages/media/image16.png "Validate connectivity")
-
-### Task 6: Download the exercise files 
-
-1.  Download the exercise files for the training (from within the virtual machine)
-
-    a.  Create a new folder on your computer named **C:\\Hackathon**
-
-    b.  Download the support files (.zip format), <https://cloudworkshop.blob.core.windows.net/media-services-and-cdn/Media-Services-Student-Files.zip> to the new folder
-
-    c.  Extract the contents to the same folder
 
 ## Exercise 1: Signup for Video Indexer API Service
 
