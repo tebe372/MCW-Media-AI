@@ -18,7 +18,7 @@ Microsoft may have patents, patent applications, trademarks, copyrights, or othe
 
 The names of manufacturers, products, or URLs are provided for informational purposes only and Microsoft makes no representations and warranties, either expressed, implied, or statutory, regarding these manufacturers or the use of the products with any Microsoft technologies. The inclusion of a manufacturer or product does not imply endorsement of Microsoft of the manufacturer or product. Links may be provided to third party sites. Such sites are not under the control of Microsoft and Microsoft is not responsible for the contents of any linked site or any link contained in a linked site, or any changes or updates to such sites. Microsoft is not responsible for webcasting or any other form of transmission received from any linked site. Microsoft is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement of Microsoft of the site or the products contained therein.
 
-2018 Microsoft Corporation. All rights reserved.
+© 2018 Microsoft Corporation. All rights reserved.
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
@@ -166,9 +166,9 @@ When participants are doing activities, you can **look ahead to refresh your mem
 
 ## Abstract and learning objectives 
 
-In this workshop, students will learn how to build, setup, and configure a Web Application that performs media streaming using Azure Services; including the Video Indexer API. Students will also learn how to implement video processing using Logic Apps, Azure Functions, and Video Indexer API to encode and transcribe videos.
+In this workshop, students will learn how to build, setup, and configure a web application that performs media streaming using Azure Services; including the Video Indexer API. Students will also learn how to implement video processing using Logic Apps, Azure Functions, and Video Indexer API to encode and transcribe videos.
 
-Students will be better able to build media applications including:
+Learning objectives:
 
 -   Setup Video Indexer API
 
@@ -182,7 +182,7 @@ Students will be better able to build media applications including:
 
 Analyze your customer’s needs.
 Time frame: 15 minutes 
-Directions: With all participants in the session, the facilitator/SME presents an overview of the customer case study along with technical tips. 
+Directions: With all participants in the session, the facilitator or SME presents an overview of the customer case study along with technical tips. 
 1.  Meet your table participants and trainer 
 2.  Read all of the directions for steps 1–3 in the student guide 
 3.  As a table team, review the following customer case study
@@ -191,19 +191,19 @@ Directions: With all participants in the session, the facilitator/SME presents a
 
 ### Customer situation
 
-Contoso Consulting is a mature consulting firm that has been in the IT Consulting business for over 30 years with clients all over the world. They have a history of mainly specializing in Microsoft technologies, but do have an established practice of offering Linux and OSS based consulting. The company has adapted to the ever-changing landscape of IT for a long time and has been involved in the training and adoption / transition process of many of its clients over the years. In addition to IT Consulting services, Contoso provides on-site and video-based training to their larger clients. This involves creating custom training content and course agendas based on the client's needs and project being delivered.
+Contoso Consulting is a mature consulting firm that has been in the IT Consulting business for over 30 years with clients all over the world. They have a history of mainly specializing in Microsoft technologies, but do have an established practice of offering Linux and OSS based consulting. The company has adapted to the ever-changing landscape of IT for a long time and has been involved in the training and adoption or transition process of many of its clients over the years. In addition to IT consulting services, Contoso provides on-site and video-based training to their larger clients. This involves creating custom training content and course agendas based on the client's needs and project being delivered.
 
 Clients have always gotten a lot of value out of Contoso Consulting's training classes. Even though Contoso has trained the clients development and/or engineering teams, they are still brought back for future work since they have been able to deliver such great value over the years. Over the last couple years, clients have been asking them for more and more training courses. The referrals for training have been trickling down and coming from many of Contoso's smaller clients in addition to their larger clients. They have had to turn away a lot of smaller training contract opportunities due to the inability to create solutions affordable enough for their smaller clients.
 
-Due to the efforts of their sales teams, Contoso has created many video-based training classes they have been able to deliver to clients using DVD's or MP4 files. While this enables them to reuse training content and deliver it in a more affordable and scalable manner, it just does not give them the full capabilities they would like. As the content ages, the DVD's or MP4's are no longer relevant, and clients are solely purchasing individual courses. They have also used some of the available video hosting services on the market with only limited success. Everything they have tried so far has not quite offered the features and capabilities that an Enterprise needs for a good quality video streaming experience.
+Due to the efforts of their sales teams, Contoso has created many video-based training classes they have been able to deliver to clients using DVDs or MP4 files. While this enables them to reuse training content and deliver it in a more affordable and scalable manner, it just does not give them the full capabilities they would like. As the content ages, the DVDs or MP4s are no longer relevant, and clients are solely purchasing individual courses. They have also used some of the available video hosting services on the market with only limited success. Everything they have tried so far has not quite offered the features and capabilities that an Enterprise needs for a good quality video streaming experience.
 
-Because of this changing landscape of getting further into the IT Training business, the CEO of Contoso Consulting, Jill Sampson, has decided to pursue the development of Contoso's own online, on-demand, video training service. Jill says, "I want to build the Netflix of IT Training!" This new service will allow Contoso to easily resell subscriptions to their clients for all of their video training courses. This will include general courses that any client can be sold, to one-off custom courses built for specific clients based on their own specific IT Infrastructure or Custom Software that Contoso has delivered to them.
+Because of this changing landscape of getting further into the IT training business, the CEO of Contoso Consulting, Jill Sampson, has decided to pursue the development of Contoso's own online, on-demand, video training service. Jill says, "I want to build the Netflix of IT training!" This new service will allow Contoso to easily resell subscriptions to their clients for all of their video training courses. This will include general courses that any client can be sold, to one-off custom courses built for specific clients based on their own specific IT infrastructure or custom software that Contoso has delivered to them.
 
 Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of the media and video services within the Microsoft Azure platform. However, she still has several questions to answer before making a final decision on the technology and platforms to use for implementation. The Contoso IT Development and Engineering teams do not have much experience with building and maintaining video streaming services, so they are a bit uncertain of what path to take with the design and architecture at this point. In initial conversations with the sales team, Mary has said, "We have a tremendous amount of Enterprise IT experience within our organization, we just need a little help figuring out the unknowns here."
 
 ### Customer needs 
 
-1.  The system must scale globally for their many clients all over the world, including new clients as Contoso grows their IT Training business
+1.  The system must scale globally for their many clients all over the world, including new clients as Contoso grows their IT training business
 
 2.  They need to lessen the burden of content development by automatically generating video transcripts (video captions) and translate those into many other languages as well
 
@@ -211,9 +211,9 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 4.  The ability to easily search through the content is needed so the service can be an easy to use lookup reference
 
-5.  The system needs to have an Administration Portal where new and updated content can be maintained by their internal staff
+5.  The system needs to have an administration portal where new and updated content can be maintained by their internal staff
 
-6.  Use Serverless compute where possible to minimize overall maintenance and overhead cost
+6.  Use serverless compute where possible to minimize overall maintenance and overhead cost
 
 ### Customer objections 
 
@@ -229,11 +229,11 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 #### Video-on-demand digital media
 
-![This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image2.png "Common Video-on-demand scenarios infographic")
+![This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image2.png "This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.")
 
 #### Keyword search/speech-to-text/OCR digital media
 
-![This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image3.png "Common keyword search/speech-to-text/OCR digital media infographic")
+![This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image3.png "This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.")
 
 
 ## Step 2: Design a proof of concept solution
@@ -263,9 +263,9 @@ Directions: With all participants at your table, respond to the following questi
 
 Directions: With all participants at your table: 
 
-1.  Identify any customer needs that are not addressed with the proposed solution. 
-2.  Identify the benefits of your solution. 
-3.  Determine how you will respond to the customer’s objections. 
+1.  Identify any customer needs that are not addressed with the proposed solution 
+2.  Identify the benefits of your solution
+3.  Determine how you will respond to the customer’s objections 
 
 Prepare a 15-minute chalk-talk style presentation to the customer. 
 
@@ -376,20 +376,20 @@ The preferred solution consists of the following high-level components:
 
 1.  Admin website through which videos can be uploaded by Contoso employees
 
-2.  "Public" / End-user website through which customers of Contoso can watch video courses, including access to Video Insights such as transcriptions, captions, and search features
+2.  "Public" or end-user website through which customers of Contoso can watch video courses, including access to Video Insights such as transcriptions, captions, and search features
 
-3.  Background processing that is implemented with a serverless architecture using Azure Logic Apps and Azure Functions. This background processing orchestrates the video upload / encoding workflow.
+3.  Background processing that is implemented with a serverless architecture using Azure Logic Apps and Azure Functions. This background processing orchestrates the video upload or encoding workflow.
 
-4.  Azure Video Indexer service / API provides Video Encoding and Indexing capabilities, as well as video streaming to the "Public" / End-user website
+4.  Azure Video Indexer service or API provides video encoding and indexing capabilities, as well as video streaming to the "public" or end-user website
 
 5.  Backend database is used to store application data. It is recommended to use Azure Cosmos DB for higher scalability, but Azure SQL Database could also be implemented
 
 The following High-Level Diagram displays the overall, general architecture of the preferred solution:
 
-![Icons that are connected by arrows comprise this rectangular diagram. From the top left, Web App -- Admin Site points linearly down to Azure Storage, which points right to a blue box labeled Azure Logic App. In this box, Azure Logic App points at Video Indexer Connector, and the blue box points right to Video Indexer Service. The rest of the icons use double-sided arrows and point to and from: Video Indexer Service up to Web App -- Frontend, left to Database, which points down through the middle of the rectangle to Azure Function and back down to the blue Azure Logic App box. A double-sided arrow also connects Azure Function to Video Indexer Service, and on the right side, a double-sided arrow points from Web App -- Frontend to Media Player.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image4.png "Solution architecture diagram")
+![Icons that are connected by arrows comprise this rectangular diagram. From the top left, Web App -- Admin Site points linearly down to Azure Storage, which points right to a blue box labeled Azure Logic App. In this box, Azure Logic App points at Video Indexer Connector, and the blue box points right to Video Indexer Service. The rest of the icons use double-sided arrows and point to and from: Video Indexer Service up to Web App -- Frontend, left to Database, which points down through the middle of the rectangle to Azure Function and back down to the blue Azure Logic App box. A double-sided arrow also connects Azure Function to Video Indexer Service, and on the right side, a double-sided arrow points from Web App -- Frontend to Media Player.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image4.png "Icons that are connected by arrows comprise this rectangular diagram. From the top left, Web App -- Admin Site points linearly down to Azure Storage, which points right to a blue box labeled Azure Logic App. In this box, Azure Logic App points at Video Indexer Connector, and the blue box points right to Video Indexer Service. The rest of the icons use double-sided arrows and point to and from: Video Indexer Service up to Web App -- Frontend, left to Database, which points down through the middle of the rectangle to Azure Function and back down to the blue Azure Logic App box. A double-sided arrow also connects Azure Function to Video Indexer Service, and on the right side, a double-sided arrow points from Web App -- Frontend to Media Player.")
 
 
-**Admin and "Public" / End-user website**
+**Admin and "public" or end-user website**
 
 -   Hosted using Azure Web Apps
 
@@ -421,7 +421,7 @@ The following High-Level Diagram displays the overall, general architecture of t
 
     Microsoft has gone through a couple generations of transcription services and APIs over the years. The most recent and most accurate transcription functionality is contained within the Video Indexer service that is part of Cognitive Services. Video Indexer can easily generate transcripts for both audio and video.
 
-2.  There are plenty of video encoding tools out there, but what does Azure offer to do this more easily?\
+2.  There are plenty of video encoding tools out there, but what does Azure offer to do this more easily?
     
     **Potential Answer**
 
@@ -429,7 +429,7 @@ The following High-Level Diagram displays the overall, general architecture of t
 
     Azure Media Services does offer video encoding and delivery as a PaaS service, but it is pretty "bare-bones" in its functionality.
 
-3.  Do we need to hire translators to translate the transcripts into other languages?\
+3.  Do we need to hire translators to translate the transcripts into other languages?
     
     **Potential Answer**
 
