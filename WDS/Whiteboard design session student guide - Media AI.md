@@ -30,15 +30,15 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 - [Media AI whiteboard design session student guide](#media-ai-whiteboard-design-session-student-guide)
     - [Abstract and learning objectives](#abstract-and-learning-objectives)
-    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+    - [Step 1: Review the customer case study](#step-1--review-the-customer-case-study)
         - [Customer situation](#customer-situation)
         - [Customer needs](#customer-needs)
         - [Customer objections](#customer-objections)
         - [Infographic for common scenarios](#infographic-for-common-scenarios)
             - [Video-on-demand digital media](#video-on-demand-digital-media)
-            - [Keyword search/speech-to-text/OCR digital media](#keyword-searchspeech-to-textocr-digital-media)
-    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
-    - [Step 3: Present the solution](#step-3-present-the-solution)
+            - [Keyword search/speech-to-text/OCR digital media](#keyword-search-speech-to-text-ocr-digital-media)
+    - [Step 2: Design a proof of concept solution](#step-2--design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3--present-the-solution)
     - [Wrap-up](#wrap-up)
     - [Additional references](#additional-references)
 
@@ -64,6 +64,7 @@ Learning objectives:
 
 Analyze your customer’s needs.
 Time frame: 15 minutes 
+
 Directions: With all participants in the session, the facilitator or SME presents an overview of the customer case study along with technical tips. 
 1.  Meet your table participants and trainer 
 2.  Read all of the directions for steps 1–3 in the student guide 
@@ -111,11 +112,11 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 #### Video-on-demand digital media
 
-![This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image2.png "This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.")
+![This diagram uses icons that are connected by arrows to illustrate common video-on-demand scenarios. The following icons are organized left to right and are connected by arrows that point right: Mezzanine Video Files (with a lock icon), Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, and Azure CDN. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow. The Azure CDN arrow forks to Azure Media Player in Browser (top) and Azure Media Player in Mobile App (bottom). Both of these point to a Cloud DRM License/Key Delivery Server icon with arrows labeled Token. The Cloud DRM License/Key Delivery Server icon in turn points back to these icons with arrows labeled Licence/Key.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image2.png "Common video-on-demand scenarios infographic")
 
 #### Keyword search/speech-to-text/OCR digital media
 
-![This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image3.png "This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.")
+![This diagram uses icons that are connected by arrows to illustrate keyword search/speech-to-text/OCR digital media. The following icons are organized left to right and are connected by arrows that point right: Source A/V File, Azure Blob Storage, Streaming Endpoint, Multi-Protocol Dynamic Packaging/Multi-DRM, Azure CDN, and Azure Media Player. An Azure Encoder (Standard or Premium) icon points at the Azure Blob Storage icon with a bidirectional arrow, and the Azure Blob Storage icon points at an Azure Media Indexer/OCR Media Processor icon. The Azure Media Indexer/OCR Media Processor icon points right with an arrow labeled TTML, WebVTT Keywords to an Azure Search icon, which in turn points at the Azure Media Player icon. A bidirectional arrow connects the Azure Media Player icon to the Azure Search icon through an icon labeled Web Apps.](images/Whiteboarddesignsessiontrainerguide-MediaAIimages/media/image3.png "Common keyword search or speech-to-text or OCR digital media infographic")
 
 
 ## Step 2: Design a proof of concept solution
@@ -132,6 +133,7 @@ Directions: With all participants at your table, answer the following questions 
 2.  What customer business needs do you need to address with your solution?
 
 **Design** 
+
 Directions: With all participants at your table, respond to the following questions on a flip chart.
 
 
