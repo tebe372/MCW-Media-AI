@@ -104,7 +104,6 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
     - [Task 2: View video and insights in public website](#task-2--view-video-and-insights-in-public-website)
         - [Tasks to complete](#tasks-to-complete)
         - [Exit criteria](#exit-criteria)
-    - [](#)
 - [After the hands-on lab](#after-the-hands-on-lab)
     - [Task 1: Delete resources](#task-1--delete-resources)
 
@@ -412,7 +411,7 @@ In this exercise, you will test out the Admin and Public web applications.
 
 -   The **Public** website allows users to view and play videos along with the ability to view and interact with the video insights; such as video transcripts and captions translated into multiple different languages
 
-###  
+
 
 ## After the hands-on lab 
 

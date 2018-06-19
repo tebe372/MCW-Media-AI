@@ -54,11 +54,13 @@ Note: Sometimes this image has IE ESC disabled, and sometimes it does not.
 
 ### Task 3: Update Visual Studio Tools for Azure Functions
 
-1.  Open Visual Studio 2017, then click on the **Tools** menu, then click on **Extensions and Updates...\
-    **![In Visual Studio 2017, the Tools menu is highlighted and labeled 1, and Extensions and Updates is selected, highlighted, and labeled 2 in the submenu.](images/Setup/image8.png "Select Extensions and Updates")
+1.  Open Visual Studio 2017, then click on the **Tools** menu, then click on **Extensions and Updates...**
 
-2.  On the Extensions and Updates dialog, click on **Updates**, then **Visual Studio Marketplace** on the left side of the dialog, then click on **Update** for the **Azure Functions and Web Jobs Tools** extension to update to the latest version**\
-    **![Updates (labeled 1) and Visual Studio Marketplace (labeled 2) are highlighted on the left side of the Extensions and Updates dialog box, and the Update button and the Azure Functions and Web Jobs Tools extension (labeled 3) are selected and highlighted on the right.](images/Setup/image9.png "Update Azure Functions and Web Jobs Tools")
+    ![In Visual Studio 2017, the Tools menu is highlighted and labeled 1, and Extensions and Updates is selected, highlighted, and labeled 2 in the submenu.](images/Setup/image8.png "Select Extensions and Updates")
+
+1.  On the Extensions and Updates dialog, click on **Updates**, then **Visual Studio Marketplace** on the left side of the dialog, then click on **Update** for the **Azure Functions and Web Jobs Tools** extension to update to the latest version
+
+    ![Updates (labeled 1) and Visual Studio Marketplace (labeled 2) are highlighted on the left side of the Extensions and Updates dialog box, and the Update button and the Azure Functions and Web Jobs Tools extension (labeled 3) are selected and highlighted on the right.](images/Setup/image9.png "Update Azure Functions and Web Jobs Tools")
 
 ### Task 4: Install Visual Studio Tools for Logic Apps
 
