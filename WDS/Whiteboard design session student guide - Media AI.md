@@ -63,6 +63,7 @@ Learning objectives:
 **Outcome** 
 
 Analyze your customer’s needs.
+
 Timeframe: 15 minutes 
 
 Directions: With all participants in the session, the facilitator or SME presents an overview of the customer case study along with technical tips. 
