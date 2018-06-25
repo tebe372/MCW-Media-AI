@@ -64,25 +64,25 @@ Thank you for taking time to support the whiteboard design sessions as a trainer
 
 An amazing trainer:
 
--   Creates a safe environment in which learning can take place.
+-   Creates a safe environment in which learning can take place
 
--   Stimulates the participant's thinking.
+-   Stimulates the participant's thinking
 
--   Involves the participant in the learning process.
+-   Involves the participant in the learning process
 
--   Manages the learning process (on time, on topic, and adjusting to benefit participants).
+-   Manages the learning process (on time, on topic, and adjusting to benefit participants)
 
--   Ensures individual participant accountability.
+-   Ensures individual participant accountability
 
--   Ties it all together for the participant.
+-   Ties it all together for the participant
 
--   Provides insight and experience to the learning process.
+-   Provides insight and experience to the learning process
 
--   Effectively leads the whiteboard design session discussion.
+-   Effectively leads the whiteboard design session discussion
 
--   Monitors quality and appropriateness of participant deliverables.
+-   Monitors quality and appropriateness of participant deliverables
 
--   Effectively leads the feedback process.
+-   Effectively leads the feedback process
 
 ## Whiteboard design session flow 
 
@@ -100,7 +100,7 @@ Outcome: Analyze your customer's needs
 
 **Step 2: Design a proof of concept solution (60 minutes)**
 
-Outcome: Prepare to present a solution for your target customer audience
+Outcome: Design a solution and prepare to present the solution to the target customer audient in a 15-minute chalk-talk format.
 
 -   Determine your target customer audience
 
@@ -130,13 +130,13 @@ Before conducting your first whiteboard design session:
 
 -   Read the Attendee guide (including the case study) and Trainer guide
 
--   Become familiar with all key points and activities.
+-   Become familiar with all key points and activities
 
--   Plan the point you want to stress, which questions you want to drive, transitions, and be ready to answer questions.
+-   Plan the point you want to stress, which questions you want to drive, transitions, and be ready to answer questions
 
--   Prior to the whiteboard design session, discuss the case study to pick up more ideas.
+-   Prior to the whiteboard design session, discuss the case study to pick up more ideas
 
--   Make notes for later.
+-   Make notes for later
 
 ## During the whiteboard design session: Tips for an effective whiteboard design session
 
@@ -181,7 +181,7 @@ Learning objectives:
 **Outcome** 
 
 Analyze your customer’s needs.
-Time frame: 15 minutes 
+Timeframe: 15 minutes 
 
 Directions: With all participants in the session, the facilitator or SME presents an overview of the customer case study along with technical tips. 
 1.  Meet your table participants and trainer 
@@ -242,7 +242,7 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 **Outcome** 
 Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format. 
 
-Time frame: 60 minutes
+Timeframe: 60 minutes
 
 **Business needs**
 
@@ -279,7 +279,7 @@ Prepare a 15-minute chalk-talk style presentation to the customer.
  
 Present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-Time frame: 30 minutes
+Timeframe: 30 minutes
 
 **Presentation** 
 
@@ -295,9 +295,9 @@ Directions:
 
 ##  Wrap-up 
 
-Time frame: 15 minutes
+Timeframe: 15 minutes
 
--   Tables reconvene with the larger group to hear a SME share the preferred solution for the case study.
+-   Tables reconvene with the larger group to hear the facilitator/SME share the preferred solution for the case study.
 
 ##  Additional references
 
@@ -324,47 +324,47 @@ Time frame: 15 minutes
 
 ## Step 1: Review the customer case study
 
--   Check in with your table participants to introduce yourself as the trainer.
+-   Check in with your table participants to introduce yourself as the trainer
 
 -   Ask, "What questions do you have about the customer case study?"
 
--   Briefly review the steps and timeframes of the whiteboard design session.
+-   Briefly review the steps and timeframes of the whiteboard design session
 
--   Ready, set, go! Let the table participants begin.
+-   Ready, set, go! Let the table participants begin
 
 ## Step 2: Design a proof of concept solution
 
--   Check in with your tables to ensure that they are transitioning from step to step on time.
+-   Check in with your tables to ensure that they are transitioning from step to step on time
 
--   Provide some feedback on their responses to the business needs and design.
+-   Provide some feedback on their responses to the business needs and design
 
-    -   Try asking questions first that will lead the participants to discover the answers on their own.
+    -   Try asking questions first that will lead the participants to discover the answers on their own
 
--   Provide feedback for their responses to the customer's objections.
+-   Provide feedback for their responses to the customer's objections
 
-    -   Try asking questions first that will lead the participants to discover the answers on their own.
+    -   Try asking questions first that will lead the participants to discover the answers on their own
 
 ## Step 3: Present the solution
 
--   Determine which table will be paired with your table before Step 3 begins.
+-   Determine which table will be paired with your table before Step 3 begins
 
--   For the first round, assign one table as the Microsoft team and the other table as the customer.
+-   For the first round, assign one table as the Microsoft team and the other table as the customer
 
--   Have the Microsoft team present their solution to the customer team.
+-   Have the Microsoft team present their solution to the customer team
 
-    -   Have the customer team provide one objection for the Microsoft team to respond to.
+    -   Have the customer team provide one objection for the Microsoft team to respond to
 
-    -   The presentation and objections should be no longer than 10-minutes.
+    -   The presentation and objections should be no longer than 10-minutes
 
--   Have participants on the customer team give feedback to the Microsoft team.
+-   Have participants on the customer team give feedback to the Microsoft team
 
-    -   The feedback should be no longer than 5 minutes.
+    -   The feedback should be no longer than 5 minutes
 
-    -   If needed, the trainer may also provide feedback.
+    -   If needed, the trainer may also provide feedback
 
 ## Wrap-up
 
--   Have the table participants reconvene with the larger session group to hear a SME share the following preferred solution.
+-   Have the table participants reconvene with the larger session group to hear the facilitator/SME share the following preferred solution
 
 ##  Preferred target audience
 
