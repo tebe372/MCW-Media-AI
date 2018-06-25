@@ -107,25 +107,25 @@ In this exercise, you will setup the Video Indexer API within Microsoft Azure.
 
 1.  Open a new browser window / tab and navigate to <https://videobreakdown.portal.azure-api.net/>
 
-1.  Select the **SIGN IN** link in the upper-right\
+2.  Select the **SIGN IN** link in the upper-right\
     ![SIGN IN is highlighted in the Video Indexer developer portal.](images/Hands-onlabstep-by-step-MediaAIimages/media/image17.png "Sign in to the Video Indexer developer portal")
 
-1.  Sign in with your **Microsoft** or **Azure AD** credentials. Use the same credentials you login to your Azure Subscription with\
+3.  Sign in with your **Microsoft** or **Azure AD** credentials. Use the same credentials you login to your Azure Subscription with\
     ![Azure Active Directory, Google, and Microsoft are listed as sign-in options.](images/Hands-onlabstep-by-step-MediaAIimages/media/image18.png "Sign in with Microsoft or Azure AD credentials")
 
-1.  The first time you sign in, you will be prompted to create a new account. Fill in the required fields, then choose **Sign up**\
+4.  The first time you sign in, you will be prompted to create a new account. Fill in the required fields, then choose **Sign up**\
     ![Required fields are displayed in the sign up dialog box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image19.png "Create a new account")
 
-1.  Once signed up and signed in, select on the **PRODUCTS** menu at the top\
+5.  Once signed up and signed in, select on the **PRODUCTS** menu at the top\
     ![The PRODUCTS menu is in the Video Indexer developer portal.](images/Hands-onlabstep-by-step-MediaAIimages/media/image20.png "Select PRODUCTS")
 
-1.  Select the **Free preview** product link\
+6.  Select the **Free preview** product link\
     ![The Free Preview link is highlighted under Products.](images/Hands-onlabstep-by-step-MediaAIimages/media/image21.png "Select free preview")
 
-1.  Select **Subscribe** to sign up for the free preview\
+7.  Select **Subscribe** to sign up for the free preview\
     ![The Subscribe button is highlighted under free Preview.](images/Hands-onlabstep-by-step-MediaAIimages/media/image22.png "Sign up for the free preview")
 
-1.  Check the "**I agree to the Terms of Use.**" Box, then choose **Confirm** to finish signing up for the free preview\
+8.  Check the "**I agree to the Terms of Use.**" Box, then choose **Confirm** to finish signing up for the free preview\
     ![The 'I agree to the Terms of Use' check box is selected and highlighted, and the Confirm button is highlighted at the bottom of subscribe to product page.](images/Hands-onlabstep-by-step-MediaAIimages/media/image23.png "Finish signing up for the free preview")
 
 9.  You will now see the **free preview** subscription has been created for your account\
@@ -135,7 +135,7 @@ In this exercise, you will setup the Video Indexer API within Microsoft Azure.
 
 1.  While on the **Profile** page of the **Video Indexer API**, locate the **Subscription details** for the **Free preview** subscription
 
-1.  Choose the **Show** link next to the **Primary key** to reveal the API key\
+2.  Choose the **Show** link next to the **Primary key** to reveal the API key\
     ![The Show link is highlighted next to the Primary key in the displayed subscription information.](images/Hands-onlabstep-by-step-MediaAIimages/media/image25.png "Reveal the API key")
 
 3.  Copy the **Primary key** for the **Free preview** subscription and save this for use later\
@@ -151,7 +151,7 @@ In this exercise, you will set the import workflow for uploading and importing v
 
 1.  Open a browser window and login to the Azure Portal <http://portal.azure.com>
 
-1.  In the menu, select **+New**, then **Storage**, and **Storage account**\
+2.  In the menu, select **+New**, then **Storage**, and **Storage account**\
     ![+New is highlighted and labeled 1 in the navigation pane of the Microsoft Azure portal; Storage is selected, highlighted, and labeled 2 in the middle; and Storage account is highlighted and labeled 3 on the right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image27.png "Select Storage account")
 
 3.  On the **Create storage account** blade, enter the following values:
@@ -167,49 +167,49 @@ In this exercise, you will set the import workflow for uploading and importing v
 
 4.  Select **Create**
 
-1.  In the menu, choose **Resource groups**, then select the **ContosoVideo** Resource group, then pick the **Storage Account** that was just created\
+5.  In the menu, choose **Resource groups**, then select the **ContosoVideo** Resource group, then pick the **Storage Account** that was just created\
     ![Resource groups is highlighted and labeled 1 in the navigation pane of the Microsoft Azure portal; the ContosoVideo Resource group is selected, highlighted, and labeled 2 to the right; Overview is selected to the right; and the Storage Account that was just created is highlighted and labeled 3 on the far right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image29.png "Select the Storage account")
 
-1.  On the **Storage account** blade, choose the **Blobs** link under Services to get started creating a new Blob Container\
+6.  On the **Storage account** blade, choose the **Blobs** link under Services to get started creating a new Blob Container\
     ![Overview is selected on the left side of the Storage account blade, and the Blobs link is highlighted under Services.](images/Hands-onlabstep-by-step-MediaAIimages/media/image30.png "Start creating a new Blob Container")
 
-1.  Select the **+Container** button
+7.  Select the **+Container** button
 
     ![+Container is highlighted on the Blob service blade.](images/Hands-onlabstep-by-step-MediaAIimages/media/image31.png "Add a container")
 
-1.  Enter **video** for the name of the new Container, leave the Public access level set to **Private**, then choose **OK**
+8.  Enter **video** for the name of the new Container, leave the Public access level set to **Private**, then choose **OK**
   
     ![The values above are highlighted on the Blob service blade, and OK is highlighted at the bottom.](images/Hands-onlabstep-by-step-MediaAIimages/media/image32.png "Enter the values for the new container")
 
-1.  In the left pane of the Storage Account blade, select **Access keys**, then copy the "primary" **key1**. Save this for reference later.
+9.  In the left pane of the Storage Account blade, select **Access keys**, then copy the "primary" **key1**. Save this for reference later.
     ![Access keys is selected and highlighted under Settings on the Storage Account blade, and the value for key1 is highlighted on the right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image33.png "Copy the 'primary' key1")
 
 ### Task 2: Create Azure Logic App to process videos
 
 1.  Open **Visual Studio 2017**
 
-1. Choose the **File** menu, then **Project...**
+2. Choose the **File** menu, then **Project...**
     ![File is highlighted and labeled 1 in Visual Studio 2017; New is selected, highlighted, and labeled 2 in the submenu; and Project is selected, highlighted, and labeled 3 in the submenu to the right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image34.png "Create a new project in Visual Studio 2017")
 
-1.  On the **New Project** dialog, select the **Cloud** category on the left, then select the **Azure Resource Group** project template, then choose **OK**
+3.  On the **New Project** dialog, select the **Cloud** category on the left, then select the **Azure Resource Group** project template, then choose **OK**
     ![Cloud is highlighted and labeled 1 on the left side of the new project dialog box; the Azure Resource Group project template is selected, highlighted, and labeled 2 in the middle; and OK is highlighted and labeled 3 at the bottom.](images/Hands-onlabstep-by-step-MediaAIimages/media/image35.png "Select the Azure Resource Group project template")
 
-1.  In the **Select Azure Template** dialog box, type **Logic** into the Search box to filter the available templates, then select the **Logic App** template, then choose **OK**
+4.  In the **Select Azure Template** dialog box, type **Logic** into the Search box to filter the available templates, then select the **Logic App** template, then choose **OK**
     ![Logic is entered in the search box and is labeled 1 on the left side of the Select Azure Template dialog box; the Logic App template is selected, highlighted, and labeled 2 below; and OK is highlighted and labeled 3 at the bottom.](images/Hands-onlabstep-by-step-MediaAIimages/media/image36.png "Select the Logic App template")
 
-1.  Within the **Solution Explorer** pane, right-click on the **LogicApp.json** file, then choose **Open With Logic App Designer**
+5.  Within the **Solution Explorer** pane, right-click on the **LogicApp.json** file, then choose **Open With Logic App Designer**
     ![LogicApp.json is selected, highlighted, and labeled 1 in the Solution Explorer pane, and Open With Logic App Designer is selected, highlighted, and labeled 2 in the shortcut menu.](images/Hands-onlabstep-by-step-MediaAIimages/media/image37.png "Open the LogicApp.json file with Logic App Designer")
 
-1.  On the **Logic App Properties** dialog, sign into your Microsoft or Organization Account associated with your Azure Subscription, then select the **ContosoVideo** Resource Group what was created previously, then choose **OK**
+6.  On the **Logic App Properties** dialog, sign into your Microsoft or Organization Account associated with your Azure Subscription, then select the **ContosoVideo** Resource Group what was created previously, then choose **OK**
     ![Microsoft account is highlighted and labeled 1 in the Logic App Properties dialog box; ContosoVideo is highlighted under Resource Group and is labeled 2 below; and OK is highlighted and labeled 3 at the bottom.](images/Hands-onlabstep-by-step-MediaAIimages/media/image38.png "Select the ContosoVideo Resource Group")
 
-1.  Within the Logic App Editor, scroll down and choose the **Blank Logic App** template
+7.  Within the Logic App Editor, scroll down and choose the **Blank Logic App** template
     ![The Blank Logic App template is highlighted in the Logic App Editor.](images/Hands-onlabstep-by-step-MediaAIimages/media/image39.png "Select the Blank Logic App template")
 
-1.  In the **Logic App Designer**, start building out the Logic App Workflow by searching for and adding the **Azure Blob Storage -- When a blob is added or modified (properties only)** Trigger
+8.  In the **Logic App Designer**, start building out the Logic App Workflow by searching for and adding the **Azure Blob Storage -- When a blob is added or modified (properties only)** Trigger
     ![Blob storage is entered in the search box of Logic App Designer, and the Azure Blob Storage -- When a blob is added or modified (properties only) trigger is highlighted and labeled 2 below.](images/Hands-onlabstep-by-step-MediaAIimages/media/image40.png "Add the Azure Blob Storage trigger")
 
-1.  Enter a name in the **Connection Name** field, then select the **Storage Account** that was previously created, then select **Create**
+9.  Enter a name in the **Connection Name** field, then select the **Storage Account** that was previously created, then select **Create**
     ![The value under Connection Name is highlighted, and the Storage Account that was previously created is highlighted below.](images/Hands-onlabstep-by-step-MediaAIimages/media/image41.png "Select the Storage account")
 
 10. On the **Blob Storage Trigger**, enter the following values:
@@ -249,9 +249,11 @@ In this exercise, you will set the import workflow for uploading and importing v
     ![DisplayName is highlighted in the Video Name box, and the DisplayName parameter is highlighted among the displayed options.](images/Hands-onlabstep-by-step-MediaAIimages/media/image49.png "Select the DisplayName parameter")
 
 - Privacy: **Private**
-    ![Private is highlighted in the Privacy box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image50.png "Select private")
+
+![Private is highlighted in the Privacy box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image50.png "Select private")
 
 17. Save the Logic App
+
     ![The Save icon is selected.](images/Hands-onlabstep-by-step-MediaAIimages/media/image51.png "Save the Logic App")
 
 18. Within the **Solution Explorer** pane, right-click the **Resource Group Project**, choose **Deploy**, then select the **ContosoVideo** deployment
@@ -285,7 +287,7 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
 ### Task 1: Provision Cosmos DB Account
 
-1.  In the menu, choose **+Create a resource**, then **Databases**, then **Azure Cosmos DB
+1.  In the menu, choose **+Create a resource**, then **Databases**, then **Azure Cosmos DB**
 
     ![+Create a resource is highlighted and labeled 1 in the navigation pane of the Microsoft Azure portal; Databases is selected, highlighted, and labeled 2 in the middle; and Azure Cosmos DB is highlighted and labeled 3 on the right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image57.png "Select Azure Cosmos DB")
 
@@ -331,41 +333,41 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
 ### Task 2: Integrate Cosmos DB into admin web app
 
-9.  Within the folder where the exercise files have been extracted to, open the **ContosoLearning.sln** solution within Visual Studio 2017
+1.  Within the folder where the exercise files have been extracted to, open the **ContosoLearning.sln** solution within Visual Studio 2017
 
     ![This PC is selected in the navigation pane of File Explorer, and ContosoLearning.sln is highlighted on the right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image63.png "Select the ContosoLearning.sln solution")
 
-10.  Within Solution Explorer, locate the **ContosoLearning.Data** project, then right-click the project and choose **Manage NuGet Packages...**
+2.  Within Solution Explorer, locate the **ContosoLearning.Data** project, then right-click the project and choose **Manage NuGet Packages...**
  
     ![The ContosoLearning.Data project is selected and highlighted in Solution Explorer, and Manage NuGet Packages is selected and highlighted in the shortcut menu.](images/Hands-onlabstep-by-step-MediaAIimages/media/image64.png "Select Manage NuGet Packages")
 
-11.  Within the **NuGet Package Manager**, choose **Browse**, then search for **Microsoft.Azure.DocumentDB**
+3.  Within the **NuGet Package Manager**, choose **Browse**, then search for **Microsoft.Azure.DocumentDB**
  
     ![Browse is highlighted and labeled 1 in NuGet Package Manager, and Microsoft.Azure.DocumentDB is entered in the search box and labeled 2.](images/Hands-onlabstep-by-step-MediaAIimages/media/image65.png "Search for Microsoft.Azure.DocumentDB")
 
-12.  Select the **Microsoft.Azure.DocumentDB** NuGet Package, then choose **Install**
+4.  Select the **Microsoft.Azure.DocumentDB** NuGet Package, then choose **Install**
  
     ![The Microsoft.Azure.DocumentDB NuGet Package is selected, highlighted, and labeled 1 on the left, and Install is highlighted and labeled 2 on the right.](images/Hands-onlabstep-by-step-MediaAIimages/media/image66.png "Install the Microsoft.Azure.DocumentDB NuGet Package")
 
-13.  Choose **OK** on the **Preview Changes** dialog
+5.  Choose **OK** on the **Preview Changes** dialog
  
     ![This is a screenshot of the Preview Changes dialog box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image67.png "Preview Changes dialog box screenshot")
 
-14.  Select **I Accept** on the **License Acceptance** dialog
+6.  Select **I Accept** on the **License Acceptance** dialog
  
     ![This is a screenshot of the License Acceptance dialog box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image68.png "License Acceptance dialog box screenshot")
 
-15.  Within Solution Explorer, locate the **ContosoLearning.Data** project, and open the **VideoRepository.cs** file. This is the source code file that will contain the source code for interactive with the Cosmos DB Database and Collection within this solution. This data access layer (DAL) implementation uses a simplified Repository pattern.
+7.  Within Solution Explorer, locate the **ContosoLearning.Data** project, and open the **VideoRepository.cs** file. This is the source code file that will contain the source code for interactive with the Cosmos DB Database and Collection within this solution. This data access layer (DAL) implementation uses a simplified Repository pattern.
  
     ![The VideoRepository.cs file is selected under the ContosoLearning.Data project in Solution Explorer.](images/Hands-onlabstep-by-step-MediaAIimages/media/image69.png "Open the VideoRepository.cs file")
 
-16.  Add the following **using** statements to the top of the **VideoRepository.cs** file
+8.  Add the following **using** statements to the top of the **VideoRepository.cs** file
 
     ```
         using Microsoft.Azure.Documents.Client;
         using Microsoft.Azure.Documents.Linq;
     ```
-17.  Add the following method named **createDocumentClient()** to the **VideoRepository** class. This is a reusable method that will be used by a couple different methods within the class to instantiate a new DocumentClient class instance for working with Cosmos DB.
+9.  Add the following method named **createDocumentClient()** to the **VideoRepository** class. This is a reusable method that will be used by a couple different methods within the class to instantiate a new DocumentClient class instance for working with Cosmos DB.
 
     ```
         private DocumentClient createDocumentClient()
@@ -377,7 +379,7 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
         }
     ```
 
-18. Modify the code for the **GetAll()** method to the following to load all Documents from Cosmos DB and return them as a list object
+10. Modify the code for the **GetAll()** method to the following to load all Documents from Cosmos DB and return them as a list object
 
     ```
         var list = new List<Video>();
@@ -399,9 +401,9 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
         return list;
     ```
 
-19. Notice that the above code references a **\_cosmosDbAuthInfo** object. This object is prepopulated with the necessary values for the Cosmos DB Account and Collection by loading from **AppSettings**. These AppSettings will be populated later.
+11. Notice that the above code references a **\_cosmosDbAuthInfo** object. This object is prepopulated with the necessary values for the Cosmos DB Account and Collection by loading from **AppSettings**. These AppSettings will be populated later.
 
-20. Replace the body of the **Get(string id)** method with the following code that will retrieve a single Document by ID
+12. Replace the body of the **Get(string id)** method with the following code that will retrieve a single Document by ID
 
     ```
         using (var documentClient = this.createDocumentClient())
@@ -414,7 +416,7 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
         }
     ```
 
-21. Replace the body of the **Delete(string videoId)** method with the following code that will delete a single document by ID
+13. Replace the body of the **Delete(string videoId)** method with the following code that will delete a single document by ID
 
     ```
         using (var documentClient = this.createDocumentClient())
@@ -425,7 +427,7 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
         }
     ```
 
-22. Add the following code to the **Insert(Video video)** method in place of the *"// Code Here"* comment. This code will insert a new Document into the Cosmos DB Collection
+14. Add the following code to the **Insert(Video video)** method in place of the *"// Code Here"* comment. This code will insert a new Document into the Cosmos DB Collection
 
     ```
         using (var documentClient = this.createDocumentClient())
@@ -437,7 +439,7 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
         }
     ```
 
-23. Save the file
+15. Save the file
 
 ### Task 3: Integrate file upload into admin web app
 
@@ -652,11 +654,11 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
 8.  On the **App Service** blade, select **Application settings
 
-   ![Application settings is selected and highlighted on the App Service blade.](images/Hands-onlabstep-by-step-MediaAIimages/media/image94.png "Select Application settings")
+    ![Application settings is selected and highlighted on the App Service blade.](images/Hands-onlabstep-by-step-MediaAIimages/media/image94.png "Select Application settings")
 
 9.  On the **Application settings** pane, scroll down to the **App settings** section
  
-   ![This is a screenshot of the App settings section on the Application settings pane.](images/Hands-onlabstep-by-step-MediaAIimages/media/image95.png "View the App settings section")
+    ![This is a screenshot of the App settings section on the Application settings pane.](images/Hands-onlabstep-by-step-MediaAIimages/media/image95.png "View the App settings section")
 
 10. Add a new App Setting with the Key of **CosmosDB\_Endpoint** with the Value set to the **Cosmos DB Account URI** that was copied
 
@@ -774,8 +776,8 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
             log.Error("DocumentId and/or VideoId parameter missing!");
             return req.CreateResponse(HttpStatusCode.BadRequest, $"Please pass a 'videoId' and 'documentId' in the Http request body");
         }
+        return req.CreateResponse(HttpStatusCode.OK, "Success");
     ```
-    return req.CreateResponse(HttpStatusCode.OK, "Success");
 
 14. The resulting **Run** method should have the following:
 
@@ -829,7 +831,7 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 
 21. Wait for the publish to complete. This should take about 1 minute to complete. You can monitor the **Output** window until it's completed.
 
-   ![The Publish Succeeded message is highlighted in the Output window.](images/Hands-onlabstep-by-step-MediaAIimages/media/image115.png "Monitor the publishing")
+    ![The Publish Succeeded message is highlighted in the Output window.](images/Hands-onlabstep-by-step-MediaAIimages/media/image115.png "Monitor the publishing")
 
 ### Step 2: Update Cosmos DB document with video processing state
 
@@ -1159,7 +1161,7 @@ In this exercise, you will extend the Front-End Application foundation to includ
 
 1.  Open the **ContosoLearning.sln** solution within Visual Studio 2017
 
-1.  Within Solution Explorer, locate and expand the **ContosoLearning.Web.Public** project, then expand the **Controllers** folder, and open the **HomeController.cs** file
+2.  Within Solution Explorer, locate and expand the **ContosoLearning.Web.Public** project, then expand the **Controllers** folder, and open the **HomeController.cs** file
  
     ![The ContosoLearning.Web.Public project is highlighted in Solution Explorer, and the expanded Controllers folder and the HomeController.cs file are highlighted below it.](images/Hands-onlabstep-by-step-MediaAIimages/media/image148.png "Open the HomeController.cs file")
 
