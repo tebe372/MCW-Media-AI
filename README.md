@@ -25,7 +25,7 @@ At the end of the workshop you will be better able to build media applications i
 ### Whiteboard Design Session
 In this whiteboard design session, you will work in a group to look at the various options and services available to you in Azure to design a video based learning solution that supports uploading and playback of videos, as well as using the more advanced AI capabilties of the platform. 
 
-### Hand-on Lab
+### Hands-on Lab
 In this hands-on lab, you will build, setup, and configure a Web Application that performs media streaming using Azure Services; including the Video Indexer API. You will also learn how to implement video processing using Logic Apps, Azure Functions, and Video Indexer API to encode and transcribe videos. 
 
 ### Azure services and related products
