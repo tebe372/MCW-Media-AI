@@ -35,3 +35,8 @@ In this hands-on lab, you will build, setup, and configure a Web Application tha
 - Video Indexer API
 - App Services
 
+## Azure solutions
+*This is an internal reference and will be updated by project PM.*
+
+## Related references
+- [MCW](https://github.com/Microsoft/MCW)
