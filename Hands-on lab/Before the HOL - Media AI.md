@@ -23,6 +23,22 @@ The names of manufacturers, products, or URLs are provided for informational pur
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
+**Contents**
+
+<!-- TOC -->
+
+- [Requirements](#requirements)
+- [Before the hands-on lab](#before-the-hands-on-lab)
+    - [Prerequisites](#prerequisites)
+    - [Task 1: Configure a development environment](#task-1-configure-a-development-environment)
+    - [Task 2: Disable IE enhanced security](#task-2-disable-ie-enhanced-security)
+    - [Task 3: Update Visual Studio Tools for Azure Functions](#task-3-update-visual-studio-tools-for-azure-functions)
+    - [Task 4: Install Visual Studio Tools for Logic Apps](#task-4-install-visual-studio-tools-for-logic-apps)
+    - [Task 5: Validate connectivity to Azure](#task-5-validate-connectivity-to-azure)
+    - [Task 6: Download the exercise files](#task-6-download-the-exercise-files)
+
+<!-- /TOC -->
+
 ## Requirements
 
 -   Microsoft Azure subscription
