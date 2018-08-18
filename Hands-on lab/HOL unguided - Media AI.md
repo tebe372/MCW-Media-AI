@@ -9,7 +9,7 @@ Hands-on lab unguided
 </div>
 
 <div class="MCWHeader3">
-March 2018
+August 2018
 </div>
 
 
@@ -153,7 +153,7 @@ In this exercise, you will setup the Video Indexer API within Microsoft Azure.
 
 #### Tasks to complete
 
-1.  Signup for an account for the **Video Indexer API**: <https://videobreakdown.portal.azure-api.net/>
+1.  Signup for an account for the **Video Indexer API**: <https://api-portal.videoindexer.ai/>
 
 2.  Subscribe to the **Authorization** API Product Subscription
 

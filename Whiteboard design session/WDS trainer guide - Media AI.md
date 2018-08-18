@@ -9,7 +9,7 @@ Whiteboard design session trainer guide
 </div>
 
 <div class="MCWHeader3">
-March 2018
+August 2018
 </div>
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -29,26 +29,26 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 - [Trainer information](#trainer-information)
     - [Role of the trainer](#role-of-the-trainer)
     - [Whiteboard design session flow](#whiteboard-design-session-flow)
-    - [Before the whiteboard design session: How to prepare](#before-the-whiteboard-design-session--how-to-prepare)
-    - [During the whiteboard design session: Tips for an effective whiteboard design session](#during-the-whiteboard-design-session--tips-for-an-effective-whiteboard-design-session)
+    - [Before the whiteboard design session: How to prepare](#before-the-whiteboard-design-session-how-to-prepare)
+    - [During the whiteboard design session: Tips for an effective whiteboard design session](#during-the-whiteboard-design-session-tips-for-an-effective-whiteboard-design-session)
 - [Media AI whiteboard design session student guide](#media-ai-whiteboard-design-session-student-guide)
     - [Abstract and learning objectives](#abstract-and-learning-objectives)
-    - [Step 1: Review the customer case study](#step-1--review-the-customer-case-study)
+    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
         - [Customer situation](#customer-situation)
         - [Customer needs](#customer-needs)
         - [Customer objections](#customer-objections)
         - [Infographic for common scenarios](#infographic-for-common-scenarios)
             - [Video-on-demand digital media](#video-on-demand-digital-media)
-            - [Keyword search/speech-to-text/OCR digital media](#keyword-search-speech-to-text-ocr-digital-media)
-    - [Step 2: Design a proof of concept solution](#step-2--design-a-proof-of-concept-solution)
-    - [Step 3: Present the solution](#step-3--present-the-solution)
+            - [Keyword search/speech-to-text/OCR digital media](#keyword-searchspeech-to-textocr-digital-media)
+    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3-present-the-solution)
     - [Wrap-up](#wrap-up)
     - [Additional references](#additional-references)
 - [Media AI whiteboard design session trainer guide](#media-ai-whiteboard-design-session-trainer-guide)
-    - [Step 1: Review the customer case study](#step-1--review-the-customer-case-study)
-    - [Step 2: Design a proof of concept solution](#step-2--design-a-proof-of-concept-solution)
-    - [Step 3: Present the solution](#step-3--present-the-solution)
-    - [Wrap-up](#wrap-up)
+    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study-1)
+    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution-1)
+    - [Step 3: Present the solution](#step-3-present-the-solution-1)
+    - [Wrap-up](#wrap-up-1)
     - [Preferred target audience](#preferred-target-audience)
     - [Preferred solution](#preferred-solution)
     - [Checklist of preferred objection handling](#checklist-of-preferred-objection-handling)
@@ -307,7 +307,7 @@ Timeframe: 15 minutes
 | What is Azure Search?   | <https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search>  |
 | Getting Started with the Video Indexer API    | <https://azure.microsoft.com/en-us/blog/gettingstartedwiththevideoindexerapi>  |
 | Use Azure Video Indexer API    | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-use-apis>   |
-| Video Indexer API Signup |   <https://videobreakdown.portal.azure-api.net/>   |
+| Video Indexer API Signup |   <https://api-portal.videoindexer.ai/>   |
 | Video Indexer Overview  | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview>       |
 | Web Apps Overview    | <https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview>  |
 | What are Logic Apps?  |  <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-what-are-logic-apps>  |
