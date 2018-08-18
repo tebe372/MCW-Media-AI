@@ -1,0 +1,30 @@
+﻿@model ContosoLearning.Web.Public.Models.HomeVideoModel
+@{
+    ViewBag.Title = Model.Video.Title;
+}
+
+
+@if (Model.Video == null)
+{
+    <h3>Video Asset Not Found.</h3>
+}
+else
+{
+    <div class="jumbotron">
+        <h1>@(Model.Video.Title)</h1>
+        <p class="lead">@(Model.Video.Description)</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+
+            [Video Here]
+
+        </div>
+        <div class="col-lg-6">
+
+            [Insights Here]
+
+        </div>
+    </div>
+}

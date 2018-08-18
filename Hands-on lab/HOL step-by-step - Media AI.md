@@ -1329,24 +1329,34 @@ In this exercise, you will extend the Front-End Application foundation to includ
 3.  Paste in the following code immediately before the **return** statement in the **Index()** method. This code will loop through all the Videos and load the **Video Thumbnail URL** for each by calling the **Video Indexer API**.
 
     ```
-        var client = new System.Net.Http.HttpClient();
-        var queryString = HttpUtility.ParseQueryString(string.Empty);
+    var client = new System.Net.Http.HttpClient();
 
-        // Request headers
-        client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", System.Configuration.ConfigurationManager.AppSettings["VideoIndexerAPI_Key"]);
+    // Request headers
+    client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", System.Configuration.ConfigurationManager.AppSettings["VideoIndexerAPI_Key"]);
 
-        // Request parameters
-        queryString["language"] = "{string}";
+    // Get Video Indexer Account ID
+    var uriAccountsResponse = await client.GetAsync("https://api.videoindexer.ai/auth/trial/Accounts");
+    var jsonUriAccountsResponse = await uriAccountsResponse.Content.ReadAsStringAsync();
+    dynamic accounts = Newtonsoft.Json.Linq.JArray.Parse(jsonUriAccountsResponse);
+    var videoIndexerAccountId = accounts[0].id;
 
-        foreach (var v in model.Videos) {
-            var uri = $"https://videobreakdown.azure-api.net/Breakdowns/Api/Partner/Breakdowns/{v.Video.VideoId}";
-            var response = await client.GetAsync(uri);
-            var json = await response.Content.ReadAsStringAsync();
-                        
-            dynamic breakdown =  Newtonsoft.Json.Linq.JObject.Parse(json);
 
-            v.ThumbnailUrl = breakdown?.summarizedInsights?.thumbnailUrl;
-        }
+    foreach (var v in model.Videos)
+    {
+        // Get Video Indexer Access Token
+        var uriResponse = await client.GetAsync($"https://api.videoindexer.ai/auth/trial/Accounts/{videoIndexerAccountId}/Videos/{v.Video.VideoId}/AccessToken");
+        var jsonUriResponse = await uriResponse.Content.ReadAsStringAsync();
+        var accessToken = jsonUriResponse.Replace("\"", string.Empty);
+
+        var uri = $"https://api.videoindexer.ai/trial/Accounts/{videoIndexerAccountId}/Videos/{v.Video.VideoId}/Index?accessToken={accessToken}";
+        var response = await client.GetAsync(uri);
+        var json = await response.Content.ReadAsStringAsync();
+
+        dynamic breakdown = Newtonsoft.Json.Linq.JObject.Parse(json);
+
+        var thumbnailId = breakdown?.summarizedInsights?.thumbnailId;
+        v.ThumbnailUrl = $"https://api.videoindexer.ai/trial/Accounts/{videoIndexerAccountId}/Videos/{v.Video.VideoId}/Thumbnails/{thumbnailId}?accessToken={accessToken}";
+    }
     ```
 
 ### Step 3: Add video player
@@ -1362,7 +1372,7 @@ In this exercise, you will extend the Front-End Application foundation to includ
 3.  Replace the placeholder text with the following code that will include the **Video Player** within an IFrame. Notice the **VideoId** property from the Video is appended to the URL within the IFrame to tell Video Indexer which video to play.
 
     ```
-    <iframe width="560" height="315" src="https://www.videoindexer.ai/embed/player/@(ViewBag["VideoIndexerAccountId"])/@(Model.Video.VideoId)?accessToken=@(Model.AccessToken)" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.videoindexer.ai/embed/player/@(model.AccountId)/@(Model.Video.VideoId)?accessToken=@(Model.AccessToken)" frameborder="0" allowfullscreen></iframe>
     ```
 
 ### Step 4: Add video insights
@@ -1374,7 +1384,7 @@ In this exercise, you will extend the Front-End Application foundation to includ
 2.  Replace the placeholder text with the following code that will include the **Video** **Insights** within an IFrame. Notice the **VideoId** property from the Video is appended to the URL within the IFrame to tell Video Indexer which video to display insights for
 
     ```
-    <iframe style="width: 100%; height: 60em;" src="https://www.videoindexer.ai/embed/insights/@(ViewBag["VideoIndexerAccountId"])/@(Model.Video.VideoId)?accessToken=@(Model.AccessToken)" frameborder="0" allowfullscreen="true"></iframe>
+    <iframe style="width: 100%; height: 60em;" src="https://www.videoindexer.ai/embed/insights/@(model.AccountId)/@(Model.Video.VideoId)?accessToken=@(Model.AccessToken)" frameborder="0" allowfullscreen="true"></iframe>
     ```
 
 ### Step 5: Integrate video player and insights together
