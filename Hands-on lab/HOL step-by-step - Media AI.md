@@ -1270,50 +1270,50 @@ In this exercise, you will extend the Front-End Application foundation to includ
 3.  Within the **HomeController** class, locate the **Index()** Action method, and replace the methods contents with the following code that uses the **VideoRepository** to load all the Videos from the Cosmos DB Collection and returns the data in the Model so the view can display it in the UI.
 
     ```
-        var model = new HomeIndexModel();
+    var model = new HomeIndexModel();
 
-        var videoRepo = VideoRepositoryFactory.Create();
+    var videoRepo = VideoRepositoryFactory.Create();
 
-        model.Videos = (from v in await videoRepo.GetAll()
-                            orderby v.Title, v.Created
-                            select new VideoListModel
-                            {
-                                Video = v
-                            }).ToArray();
-                    
-        return View(model);
+    model.Videos = (from v in await videoRepo.GetAll()
+                        orderby v.Title, v.Created
+                        select new VideoListModel
+                        {
+                            Video = v
+                        }).ToArray();
+                
+    return View(model);
     ```
 
 4.  Locate the **Video(string id)** method. This Action method is used to display the video player for individual videos. Replace the contents of this method with the following code that loads the Video info from the Cosmos DB Collection.
 
     ```
-        var model = new HomeVideoModel();
+    var model = new HomeVideoModel();
 
-        var courseRepo = VideoRepositoryFactory.Create();
-        model.Video = await courseRepo.Get(id);
+    var courseRepo = VideoRepositoryFactory.Create();
+    model.Video = await courseRepo.Get(id);
 
-        if (model.Video == null)
-        {
-            throw new Exception("Video not found!");
-        }
+    if (model.Video == null)
+    {
+        throw new Exception("Video not found!");
+    }
 
-        // Get Access Token
-        var client = new System.Net.Http.HttpClient();
-        client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", System.Configuration.ConfigurationManager.AppSettings["VideoIndexerAPI_Key"]);
+    // Get Access Token
+    var client = new System.Net.Http.HttpClient();
+    client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", System.Configuration.ConfigurationManager.AppSettings["VideoIndexerAPI_Key"]);
 
-        var uriAccountsResponse = await client.GetAsync("https://api.videoindexer.ai/auth/trial/Accounts");
-        var jsonUriAccountsResponse = await uriAccountsResponse.Content.ReadAsStringAsync();
-        dynamic accounts = Newtonsoft.Json.Linq.JArray.Parse(jsonUriAccountsResponse);
-        var videoIndexerAccountId = accounts[0].id as string;
-        ViewBag["VideoIndexerAccountId"] = videoIndexerAccountId;
+    var uriAccountsResponse = await client.GetAsync("https://api.videoindexer.ai/auth/trial/Accounts");
+    var jsonUriAccountsResponse = await uriAccountsResponse.Content.ReadAsStringAsync();
+    dynamic accounts = Newtonsoft.Json.Linq.JArray.Parse(jsonUriAccountsResponse);
+    var videoIndexerAccountId = accounts[0].id;
+    model.AccountId = videoIndexerAccountId.ToString();
 
-        var uriResponse = await client.GetAsync($"https://api.videoindexer.ai/auth/trial/Accounts/{videoIndexerAccountId}/Videos/{model.Video.VideoId}/AccessToken");
-        var jsonUriResponse = await uriResponse.Content.ReadAsStringAsync();
+    var uriResponse = await client.GetAsync($"https://api.videoindexer.ai/auth/trial/Accounts/{videoIndexerAccountId}/Videos/{model.Video.VideoId}/AccessToken");
+    var jsonUriResponse = await uriResponse.Content.ReadAsStringAsync();
 
-        model.AccessToken = jsonUriResponse.Replace("\"", string.Empty);
+    model.AccessToken = jsonUriResponse.Replace("\"", string.Empty);
 
 
-        return View(model);
+    return View(model);
     ```
 
 5.  **Save** the file.
@@ -1365,26 +1365,26 @@ In this exercise, you will extend the Front-End Application foundation to includ
 
     ![The Video.cshtml file is selected and highlighted under the Views and Home folders in the ContosoLearning.Web.Public project in Solution Explorer.](images/Hands-onlabstep-by-step-MediaAIimages/media/image150.png "Select the Video.cshtml file")
 
-2.  Locate the "*\[Video Here\]"* placeholder text within the **Video.cshtml** view
+2.  Locate the `[Video Here]` placeholder text within the **Video.cshtml** view
 
     ![The "\[Video Here\]" placeholder text is visible in the Video.cshtml file.](images/Hands-onlabstep-by-step-MediaAIimages/media/image151.png "Find the placeholder text")
 
 3.  Replace the placeholder text with the following code that will include the **Video Player** within an IFrame. Notice the **VideoId** property from the Video is appended to the URL within the IFrame to tell Video Indexer which video to play.
 
     ```
-    <iframe width="560" height="315" src="https://www.videoindexer.ai/embed/player/@(model.AccountId)/@(Model.Video.VideoId)?accessToken=@(Model.AccessToken)" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.videoindexer.ai/embed/player/@(Model.AccountId)/@(Model.Video.VideoId)?accessToken=@(Model.AccessToken)" frameborder="0" allowfullscreen></iframe>
     ```
 
 ### Step 4: Add video insights
 
-1.  Within the **Video.cshtml** file, locate the "*\[**Insights Here\]"* placeholder text
+1.  Within the **Video.cshtml** file, locate the `[Insights Here]` placeholder text
  
     ![The "\[Insights Here\]" placeholder text is visible in the Video.cshtml file.](images/Hands-onlabstep-by-step-MediaAIimages/media/image152.png "Find the placeholder text")
 
 2.  Replace the placeholder text with the following code that will include the **Video** **Insights** within an IFrame. Notice the **VideoId** property from the Video is appended to the URL within the IFrame to tell Video Indexer which video to display insights for
 
     ```
-    <iframe style="width: 100%; height: 60em;" src="https://www.videoindexer.ai/embed/insights/@(model.AccountId)/@(Model.Video.VideoId)?accessToken=@(Model.AccessToken)" frameborder="0" allowfullscreen="true"></iframe>
+    <iframe style="width: 100%; height: 60em;" src="https://www.videoindexer.ai/embed/insights/@(Model.AccountId)/@(Model.Video.VideoId)?accessToken=@(Model.AccessToken)" frameborder="0" allowfullscreen="true"></iframe>
     ```
 
 ### Step 5: Integrate video player and insights together
