@@ -976,10 +976,13 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
         public class VideoProcessingState
         {
             public string state { get; set; }
-            public string progress { get; set; }
-
-            public string ErrorType { get; set; }
-            public string Message { get; set; }
+        
+            public videostate[] videos { get; set; }
+    
+            public class videostate
+            {
+                public string processingProgress { get; set; }
+            }
         }
     ```
 
@@ -988,24 +991,31 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 11. Open the **Function.cs** code file, and paste in the following **GetVideoProcessingState** method below the **Run** method:
 
     ```
-        private static async Task<VideoProcessingState> GetVideoProcessingState(string videoId, TraceWriter log)
-        {
-            var client = new HttpClient();
+    private static async Task<VideoProcessingState> GetVideoProcessingState(string videoId, TraceWriter log)
+    {
+        var client = new HttpClient();
 
-            // Request headers
-            string subscriptionKey = System.Configuration.ConfigurationManager.AppSettings["VideoIndexerAPI_Key"];
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
+        // Request headers
+        string subscriptionKey = System.Configuration.ConfigurationManager.AppSettings["VideoIndexerAPI_Key"];
+        client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
 
-            var uri = $"https://videobreakdown.azure-api.net/Breakdowns/Api/Partner/Breakdowns/{videoId}/State";
+        // Get Video Indexer Account ID
+        var uriAccountsResponse = await client.GetAsync("https://api.videoindexer.ai/auth/trial/Accounts");
+        var jsonUriAccountsResponse = await uriAccountsResponse.Content.ReadAsStringAsync();
+        dynamic accounts = Newtonsoft.Json.Linq.JArray.Parse(jsonUriAccountsResponse);
+        var videoIndexerAccountId = accounts[0].id;
 
-            var response = await client.GetAsync(uri);
+        //Get Video Index
+        var uri = $"https://api.videoindexer.ai/trial/Accounts/{videoIndexerAccountId}/Videos/{videoId}/Index";
 
-            var content = await response.Content.ReadAsStringAsync();
+        var response = await client.GetAsync(uri);
 
-            log.Info($"Processing State JSON: {content}");
+        var content = await response.Content.ReadAsStringAsync();
 
-            return JsonConvert.DeserializeObject<VideoProcessingState>(content);
-        }
+        log.Info($"Processing State JSON: {content}");
+
+        return JsonConvert.DeserializeObject<VideoProcessingState>(content);
+    }
     ```
         
 12. Go back to the **Run** method, and add the following source code immediately below the "*inputDocument.videoId ="* line that will call the newly created function to load the Video Processing State
@@ -1337,6 +1347,7 @@ In this exercise, you will extend the Front-End Application foundation to includ
     // Get Video Indexer Account ID
     var uriAccountsResponse = await client.GetAsync("https://api.videoindexer.ai/auth/trial/Accounts");
     var jsonUriAccountsResponse = await uriAccountsResponse.Content.ReadAsStringAsync();
+    // There seems to be a bug in Video Indexer API ?? that returns 401 responses here...
     dynamic accounts = Newtonsoft.Json.Linq.JArray.Parse(jsonUriAccountsResponse);
     var videoIndexerAccountId = accounts[0].id;
 
