@@ -9,7 +9,7 @@ Media AI
 </div>
 
 <div class="MCWHeader3">
-March 2018
+August 2018
 </div>
 
 
@@ -29,15 +29,15 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 - [Media AI whiteboard design session student guide](#media-ai-whiteboard-design-session-student-guide)
     - [Abstract and learning objectives](#abstract-and-learning-objectives)
-    - [Step 1: Review the customer case study](#step-1--review-the-customer-case-study)
+    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
         - [Customer situation](#customer-situation)
         - [Customer needs](#customer-needs)
         - [Customer objections](#customer-objections)
         - [Infographic for common scenarios](#infographic-for-common-scenarios)
             - [Video-on-demand digital media](#video-on-demand-digital-media)
-            - [Keyword search/speech-to-text/OCR digital media](#keyword-search-speech-to-text-ocr-digital-media)
-    - [Step 2: Design a proof of concept solution](#step-2--design-a-proof-of-concept-solution)
-    - [Step 3: Present the solution](#step-3--present-the-solution)
+            - [Keyword search/speech-to-text/OCR digital media](#keyword-searchspeech-to-textocr-digital-media)
+    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3-present-the-solution)
     - [Wrap-up](#wrap-up)
     - [Additional references](#additional-references)
 
@@ -189,7 +189,7 @@ Timeframe: 15 minutes
 | What is Azure Search?   | <https://docs.microsoft.com/en-us/azure/search/search-what-is-azure-search>  |
 | Getting Started with the Video Indexer API    | <https://azure.microsoft.com/en-us/blog/gettingstartedwiththevideoindexerapi>  |
 | Use Azure Video Indexer API    | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-use-apis>   |
-| Video Indexer API Signup |   <https://videobreakdown.portal.azure-api.net/>   |
+| Video Indexer API Signup |   <https://api-portal.videoindexer.ai/>   |
 | Video Indexer Overview  | <https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview>       |
 | Web Apps Overview    | <https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview>  |
 | What are Logic Apps?  |  <https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-what-are-logic-apps>  |

@@ -9,7 +9,7 @@ Hands-on lab unguided
 </div>
 
 <div class="MCWHeader3">
-March 2018
+August 2018
 </div>
 
 
@@ -39,71 +39,74 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
         - [Task 2: Copy Video Indexer API Key](#task-2-copy-video-indexer-api-key)
             - [Tasks to complete](#tasks-to-complete-1)
             - [Exit criteria](#exit-criteria-1)
-    - [Exercise 2: Setup video import workflow](#exercise-2-setup-video-import-workflow)
-        - [Task 1: Create storage account for video files](#task-1-create-storage-account-for-video-files)
+        - [Task 3: Copy Video Indexer Account ID](#task-3-copy-video-indexer-account-id)
             - [Tasks to complete](#tasks-to-complete-2)
             - [Exit criteria](#exit-criteria-2)
-        - [Task 2: Create Azure Logic App to process videos](#task-2-create-azure-logic-app-to-process-videos)
+    - [Exercise 2: Setup video import workflow](#exercise-2-setup-video-import-workflow)
+        - [Task 1: Create storage account for video files](#task-1-create-storage-account-for-video-files)
             - [Tasks to complete](#tasks-to-complete-3)
             - [Exit criteria](#exit-criteria-3)
-    - [Exercise 3: Enable admin website to upload videos](#exercise-3-enable-admin-website-to-upload-videos)
-        - [Task 1: Provision Cosmos DB account](#task-1-provision-cosmos-db-account)
+        - [Task 2: Create Azure Logic App to process videos](#task-2-create-azure-logic-app-to-process-videos)
             - [Tasks to complete](#tasks-to-complete-4)
             - [Exit criteria](#exit-criteria-4)
-        - [Task 2: Integrate Cosmos DB into admin website](#task-2-integrate-cosmos-db-into-admin-website)
+    - [Exercise 3: Enable admin website to upload videos](#exercise-3-enable-admin-website-to-upload-videos)
+        - [Task 1: Provision Cosmos DB account](#task-1-provision-cosmos-db-account)
             - [Tasks to complete](#tasks-to-complete-5)
             - [Exit criteria](#exit-criteria-5)
-        - [Task 3: Integrate File Upload into Admin Web App](#task-3-integrate-file-upload-into-admin-web-app)
+        - [Task 2: Integrate Cosmos DB into admin website](#task-2-integrate-cosmos-db-into-admin-website)
             - [Tasks to complete](#tasks-to-complete-6)
             - [Exit criteria](#exit-criteria-6)
-        - [Task 4: Add ability to delete video](#task-4-add-ability-to-delete-video)
+        - [Task 3: Integrate File Upload into Admin Web App](#task-3-integrate-file-upload-into-admin-web-app)
             - [Tasks to complete](#tasks-to-complete-7)
             - [Exit criteria](#exit-criteria-7)
-        - [Task 5: Deploy admin website to an Azure Web App](#task-5-deploy-admin-website-to-an-azure-web-app)
+        - [Task 4: Add ability to delete video](#task-4-add-ability-to-delete-video)
             - [Tasks to complete](#tasks-to-complete-8)
             - [Exit criteria](#exit-criteria-8)
-        - [Task 6: Configure application settings](#task-6-configure-application-settings)
+        - [Task 5: Deploy admin website to an Azure Web App](#task-5-deploy-admin-website-to-an-azure-web-app)
             - [Tasks to complete](#tasks-to-complete-9)
             - [Exit criteria](#exit-criteria-9)
-    - [Exercise 4: Update video status when processing is complete](#exercise-4-update-video-status-when-processing-is-complete)
-        - [Task 1: Create Azure Function](#task-1-create-azure-function)
+        - [Task 6: Configure application settings](#task-6-configure-application-settings)
             - [Tasks to complete](#tasks-to-complete-10)
             - [Exit criteria](#exit-criteria-10)
-        - [Task 2: Update Cosmos DB document with video processing state](#task-2-update-cosmos-db-document-with-video-processing-state)
+    - [Exercise 4: Update video status when processing is complete](#exercise-4-update-video-status-when-processing-is-complete)
+        - [Task 1: Create Azure Function](#task-1-create-azure-function)
             - [Tasks to complete](#tasks-to-complete-11)
             - [Exit criteria](#exit-criteria-11)
-        - [Task 3: Update video state when processing is complete](#task-3-update-video-state-when-processing-is-complete)
+        - [Task 2: Update Cosmos DB document with video processing state](#task-2-update-cosmos-db-document-with-video-processing-state)
             - [Tasks to complete](#tasks-to-complete-12)
             - [Exit criteria](#exit-criteria-12)
-    - [Exercise 5: Add video player to front-end application](#exercise-5-add-video-player-to-front-end-application)
-        - [Task 1: Integrate Cosmos DB into front-end application](#task-1-integrate-cosmos-db-into-front-end-application)
+        - [Task 3: Update video state when processing is complete](#task-3-update-video-state-when-processing-is-complete)
             - [Tasks to complete](#tasks-to-complete-13)
             - [Exit criteria](#exit-criteria-13)
-        - [Task 2: Display video thumbnail image](#task-2-display-video-thumbnail-image)
+    - [Exercise 5: Add video player to front-end application](#exercise-5-add-video-player-to-front-end-application)
+        - [Task 1: Integrate Cosmos DB into front-end application](#task-1-integrate-cosmos-db-into-front-end-application)
             - [Tasks to complete](#tasks-to-complete-14)
             - [Exit criteria](#exit-criteria-14)
-        - [Task 3: Add video player](#task-3-add-video-player)
+        - [Task 2: Display video thumbnail image](#task-2-display-video-thumbnail-image)
             - [Tasks to complete](#tasks-to-complete-15)
             - [Exit criteria](#exit-criteria-15)
-        - [Task 4: Add video insights](#task-4-add-video-insights)
+        - [Task 3: Add video player](#task-3-add-video-player)
             - [Tasks to complete](#tasks-to-complete-16)
             - [Exit criteria](#exit-criteria-16)
-        - [Task 5: Integrate video player and insights together](#task-5-integrate-video-player-and-insights-together)
+        - [Task 4: Add video insights](#task-4-add-video-insights)
             - [Tasks to complete](#tasks-to-complete-17)
             - [Exit criteria](#exit-criteria-17)
-        - [Task 6: Deploy public website to an Azure Web App](#task-6-deploy-public-website-to-an-azure-web-app)
+        - [Task 5: Integrate video player and insights together](#task-5-integrate-video-player-and-insights-together)
             - [Tasks to complete](#tasks-to-complete-18)
             - [Exit criteria](#exit-criteria-18)
-        - [Task 7: Configure application settings](#task-7-configure-application-settings)
+        - [Task 6: Deploy public website to an Azure Web App](#task-6-deploy-public-website-to-an-azure-web-app)
             - [Tasks to complete](#tasks-to-complete-19)
             - [Exit criteria](#exit-criteria-19)
-    - [Exercise 6: Test the application](#exercise-6-test-the-application)
-        - [Task 1: Upload video to admin website](#task-1-upload-video-to-admin-website)
+        - [Task 7: Configure application settings](#task-7-configure-application-settings)
             - [Tasks to complete](#tasks-to-complete-20)
             - [Exit criteria](#exit-criteria-20)
-        - [Task 2: View video and insights in public website](#task-2-view-video-and-insights-in-public-website)
+    - [Exercise 6: Test the application](#exercise-6-test-the-application)
+        - [Task 1: Upload video to admin website](#task-1-upload-video-to-admin-website)
             - [Tasks to complete](#tasks-to-complete-21)
             - [Exit criteria](#exit-criteria-21)
+        - [Task 2: View video and insights in public website](#task-2-view-video-and-insights-in-public-website)
+            - [Tasks to complete](#tasks-to-complete-22)
+            - [Exit criteria](#exit-criteria-22)
     - [After the hands-on lab](#after-the-hands-on-lab)
         - [Task 1: Delete resources](#task-1-delete-resources)
 
@@ -150,23 +153,33 @@ In this exercise, you will setup the Video Indexer API within Microsoft Azure.
 
 #### Tasks to complete
 
-1.  Signup for an account for the **Video Indexer API**: <https://videobreakdown.portal.azure-api.net/>
+1.  Signup for an account for the **Video Indexer API**: <https://api-portal.videoindexer.ai/>
 
-2.  Subscribe to the **Free Preview** API Product Subscription
+2.  Subscribe to the **Authorization** API Product Subscription
 
 #### Exit criteria
 
--   You have an Account and Subscription to the **Free Preview** API Product within the **Video Indexer API**
+-   You have an Account and Subscription to the **Authorization** API Product within the **Video Indexer API**
 
 ### Task 2: Copy Video Indexer API Key
 
 #### Tasks to complete
 
-1.  Locate the **API Key** for your **Video Indexer API Free Preview Subscription**
+1.  Locate the **API Key** for your **Video Indexer API Authorization Subscription**
 
 #### Exit criteria
 
 -   You've copied the **Video Indexer API Key** from your Subscription for later use
+
+### Task 3: Copy Video Indexer Account ID
+
+#### Tasks to complete
+
+1.  Locate the **Account Key** for your **Video Indexer** account.
+
+#### Exit criteria
+
+- You've copied the **Video Indexer Account ID** from your Video Indexer Account at <https://videoindexer.ai>
 
 ##  Exercise 2: Setup video import workflow
 

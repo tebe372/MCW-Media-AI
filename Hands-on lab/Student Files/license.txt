@@ -1,0 +1,9 @@
+The BigBuckBunny_trailer_1080p.mov video file is the Trialer for the Creative Commons movie titled "Big Buck Bunny".
+
+The movie trailer can be downloaded from here:
+https://peach.blender.org/trailer-page/
+
+
+The Introduction-to-the-Azure-Portal_mid.mp4 video file was downloaded from:
+https://channel9.msdn.com/Blogs/MVP-Azure/Introduction-to-the-Azure-Portal
+
