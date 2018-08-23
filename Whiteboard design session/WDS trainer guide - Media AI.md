@@ -166,15 +166,9 @@ When participants are doing activities, you can **look ahead to refresh your mem
 
 ## Abstract and learning objectives 
 
-In this workshop, students will learn how to build, setup, and configure a web application that performs media streaming using Azure Services; including the Video Indexer API. Students will also learn how to implement video processing using Logic Apps, Azure Functions, and Video Indexer API to encode and transcribe videos.
+In this whiteboard design session, you will work in a group to look at the various options and services available to you in Azure to design a video based learning solution that supports uploading and playback of videos, as well as using the more advanced AI capabilties of the platform.
 
-Learning objectives:
-
--   Setup Video Indexer API
-
--   Upload videos to Blob Storage to be encoded with Azure Video Indexer
-
--   Integrate Video Indexer through Logic Apps and Azure Functions
+By the end of the whiteboard design session you will be better able to design media applications including setup of the Video Indexer API, upload videos to Blob Storage to be encoded with Azure Video Indexer, and integrate Video Indexer through Logic Apps and Azure Functions.
 
 ## Step 1: Review the customer case study 
 
@@ -187,7 +181,6 @@ Directions: With all participants in the session, the facilitator or SME present
 1.  Meet your table participants and trainer 
 2.  Read all of the directions for steps 1–3 in the student guide 
 3.  As a table team, review the following customer case study
-
 
 
 ### Customer situation
