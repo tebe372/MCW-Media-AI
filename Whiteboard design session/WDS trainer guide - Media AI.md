@@ -64,25 +64,25 @@ Thank you for taking time to support the whiteboard design sessions as a trainer
 
 An amazing trainer:
 
--   Creates a safe environment in which learning can take place
+-   Creates a safe environment in which learning can take place.
 
--   Stimulates the participant's thinking
+-   Stimulates the participant's thinking.
 
--   Involves the participant in the learning process
+-   Involves the participant in the learning process.
 
--   Manages the learning process (on time, on topic, and adjusting to benefit participants)
+-   Manages the learning process (on time, on topic, and adjusting to benefit participants).
 
--   Ensures individual participant accountability
+-   Ensures individual participant accountability.
 
--   Ties it all together for the participant
+-   Ties it all together for the participant.
 
--   Provides insight and experience to the learning process
+-   Provides insight and experience to the learning process.
 
--   Effectively leads the whiteboard design session discussion
+-   Effectively leads the whiteboard design session discussion.
 
--   Monitors quality and appropriateness of participant deliverables
+-   Monitors quality and appropriateness of participant deliverables.
 
--   Effectively leads the feedback process
+-   Effectively leads the feedback process.
 
 ## Whiteboard design session flow 
 
@@ -90,7 +90,9 @@ Each whiteboard design session uses the following flow:
 
 **Step 1: Review the customer case study (15 minutes)**
 
-Outcome: Analyze your customer's needs
+**Outcome**
+
+Analyze your customer's needs.
 
 -   Customer's background, situation, needs and technical requirements
 
@@ -100,19 +102,23 @@ Outcome: Analyze your customer's needs
 
 **Step 2: Design a proof of concept solution (60 minutes)**
 
-Outcome: Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format.
+**Outcome**
 
--   Determine your target customer audience
+Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format.
 
--   Determine customer's business needs to address your solution
+-   Determine your target customer audience.
 
--   Design and diagram your solution
+-   Determine customer's business needs to address your solutio.n
 
--   Prepare to present your solution
+-   Design and diagram your solution.
+
+-   Prepare to present your solutio.n
 
 **Step 3: Present the solution (30 minutes)**
 
-Outcome: Present solution to your customer
+**Outcome**
+
+Present solution to your customer:
 
 -   Present solution
 
@@ -128,15 +134,15 @@ Outcome: Present solution to your customer
 
 Before conducting your first whiteboard design session:
 
--   Read the Attendee guide (including the case study) and Trainer guide
+-   Read the Attendee guide (including the case study) and Trainer guide.
 
--   Become familiar with all key points and activities
+-   Become familiar with all key points and activities.
 
--   Plan the point you want to stress, which questions you want to drive, transitions, and be ready to answer questions
+-   Plan the point you want to stress, which questions you want to drive, transitions, and be ready to answer questions.
 
--   Prior to the whiteboard design session, discuss the case study to pick up more ideas
+-   Prior to the whiteboard design session, discuss the case study to pick up more ideas.
 
--   Make notes for later
+-   Make notes for later.
 
 ## During the whiteboard design session: Tips for an effective whiteboard design session
 
@@ -146,7 +152,7 @@ Before conducting your first whiteboard design session:
 
 When participants are doing activities, you can **look ahead to refresh your memory**.
 
--   **Adjust activity and whiteboard design session pace** as needed to allow time for presenting, feedback, and sharing
+-   **Adjust activity and whiteboard design session pace** as needed to allow time for presenting, feedback, and sharing.
 
 -   **Add examples, points, and stories** from your own experience. Think about stories you can share that help you make your points clearly and effectively.
 
@@ -166,7 +172,7 @@ When participants are doing activities, you can **look ahead to refresh your mem
 
 ## Abstract and learning objectives 
 
-In this whiteboard design session, you will work in a group to look at the various options and services available to you in Azure to design a video based learning solution that supports uploading and playback of videos, as well as using the more advanced AI capabilties of the platform.
+In this whiteboard design session, you will work in a group to look at the various options and services available to you in Azure to design a video based learning solution that supports uploading and playback of videos, as well as using the more advanced AI capabilities of the platform.
 
 By the end of the whiteboard design session you will be better able to design media applications including setup of the Video Indexer API, upload videos to Blob Storage to be encoded with Azure Video Indexer, and integrate Video Indexer through Logic Apps and Azure Functions.
 
@@ -175,13 +181,13 @@ By the end of the whiteboard design session you will be better able to design me
 **Outcome** 
 
 Analyze your customer’s needs.
+
 Timeframe: 15 minutes 
 
 Directions: With all participants in the session, the facilitator or SME presents an overview of the customer case study along with technical tips. 
-1.  Meet your table participants and trainer 
-2.  Read all of the directions for steps 1–3 in the student guide 
-3.  As a table team, review the following customer case study
-
+1.  Meet your table participants and trainer. 
+2.  Read all of the directions for steps 1–3 in the student guide. 
+3.  As a table team, review the following customer case study.
 
 ### Customer situation
 
@@ -197,17 +203,17 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 ### Customer needs 
 
-1.  The system must scale globally for their many clients all over the world, including new clients as Contoso grows their IT training business
+1.  The system must scale globally for their many clients all over the world, including new clients as Contoso grows their IT training business.
 
-2.  They need to lessen the burden of content development by automatically generating video transcripts (video captions) and translate those into many other languages as well
+2.  They need to lessen the burden of content development by automatically generating video transcripts (video captions) and translate those into many other languages as well.
 
-3.  Copy protection or DRM are desired to keep their IP from getting stolen
+3.  Copy protection or DRM are desired to keep their IP from getting stolen.
 
-4.  The ability to easily search through the content is needed so the service can be an easy to use lookup reference
+4.  The ability to easily search through the content is needed so the service can be an easy to use lookup reference.
 
-5.  The system needs to have an administration portal where new and updated content can be maintained by their internal staff
+5.  The system needs to have an administration portal where new and updated content can be maintained by their internal staff.
 
-6.  Use serverless compute where possible to minimize overall maintenance and overhead cost
+6.  Use serverless compute where possible to minimize overall maintenance and overhead cost.
 
 ### Customer objections 
 
@@ -233,20 +239,20 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 ## Step 2: Design a proof of concept solution
 
 **Outcome** 
+
 Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format. 
 
 Timeframe: 60 minutes
 
 **Business needs**
 
-Directions: With all participants at your table, answer the following questions and list the answers on a flip chart. 
+Directions: With all participants at your table, answer the following questions and list the answers on a flip chart: 
 1.  Who should you present this solution to? Who is your target customer audience? Who are the decision makers? 
 2.  What customer business needs do you need to address with your solution?
 
 **Design** 
 
-Directions: With all participants at your table, respond to the following questions on a flip chart.
-
+Directions: With all participants at your table, respond to the following questions on a flip chart:
 
 1.  What Azure Services are to be used to meet all of the customer needs?
 
@@ -258,13 +264,11 @@ Directions: With all participants at your table, respond to the following questi
 
 Directions: With all participants at your table: 
 
-1.  Identify any customer needs that are not addressed with the proposed solution 
-2.  Identify the benefits of your solution
-3.  Determine how you will respond to the customer’s objections 
+1.  Identify any customer needs that are not addressed with the proposed solution. 
+2.  Identify the benefits of your solution.
+3.  Determine how you will respond to the customer’s objections. 
 
 Prepare a 15-minute chalk-talk style presentation to the customer. 
-
-
 
 ## Step 3: Present the solution
 
@@ -277,14 +281,13 @@ Timeframe: 30 minutes
 **Presentation** 
 
 Directions:
-1.  Pair with another table
-2.  One table is the Microsoft team and the other table is the customer
-3.  The Microsoft team presents their proposed solution to the customer
-4.  The customer makes one of the objections from the list of objections
-5.  The Microsoft team responds to the objection
-6.  The customer team gives feedback to the Microsoft team 
-7.  Tables switch roles and repeat Steps 2–6
-
+1.  Pair with another table.
+2.  One table is the Microsoft team and the other table is the customer.
+3.  The Microsoft team presents their proposed solution to the customer.
+4.  The customer makes one of the objections from the list of objections.
+5.  The Microsoft team responds to the objection.
+6.  The customer team gives feedback to the Microsoft team. 
+7.  Tables switch roles and repeat Steps 2–6.
 
 ##  Wrap-up 
 
@@ -312,52 +315,47 @@ Timeframe: 15 minutes
 | Overview of the Azure Content Delivery Network (CDN)  | <https://docs.microsoft.com/en-us/azure/cdn/cdn-overview>    |
 
 
-
 # Media AI whiteboard design session trainer guide
 
 ## Step 1: Review the customer case study
 
--   Check in with your table participants to introduce yourself as the trainer
+-   Check in with your table participants to introduce yourself as the trainer.
 
 -   Ask, "What questions do you have about the customer case study?"
 
--   Briefly review the steps and timeframes of the whiteboard design session
+-   Briefly review the steps and timeframes of the whiteboard design session.
 
--   Ready, set, go! Let the table participants begin
+-   Ready, set, go! Let the table participants begin.
 
 ## Step 2: Design a proof of concept solution
 
--   Check in with your tables to ensure that they are transitioning from step to step on time
+-   Check in with your tables to ensure that they are transitioning from step to step on time.
 
--   Provide some feedback on their responses to the business needs and design
+-   Provide some feedback on their responses to the business needs and design.
 
-    -   Try asking questions first that will lead the participants to discover the answers on their own
+    -   Try asking questions first that will lead the participants to discover the answers on their own.
 
--   Provide feedback for their responses to the customer's objections
+-   Provide feedback for their responses to the customer's objections.
 
-    -   Try asking questions first that will lead the participants to discover the answers on their own
+    -   Try asking questions first that will lead the participants to discover the answers on their own.
 
 ## Step 3: Present the solution
 
--   Determine which table will be paired with your table before Step 3 begins
+-   Determine which table will be paired with your table before Step 3 begins.
 
--   For the first round, assign one table as the Microsoft team and the other table as the customer
+-   For the first round, assign one table as the Microsoft team and the other table as the customer.
 
--   Have the Microsoft team present their solution to the customer team
+-   Have the presenting team present their solution to the customer team.
 
-    -   Have the customer team provide one objection for the Microsoft team to respond to
-
-    -   The presentation and objections should be no longer than 10-minutes
-
--   Have participants on the customer team give feedback to the Microsoft team
-
-    -   The feedback should be no longer than 5 minutes
-
-    -   If needed, the trainer may also provide feedback
+    -   Have the customer team provide one objection for the presenting team to respond to.
+    
+    -   The presentation, objections, and feedback should take no longer than 15 minutes.
+    
+    -   If needed, the trainer may also provide feedback.
 
 ## Wrap-up
 
--   Have the table participants reconvene with the larger session group to hear the facilitator/SME share the following preferred solution
+-   Have the table participants reconvene with the larger session group to hear the facilitator/SME share the following preferred solution.
 
 ##  Preferred target audience
 
@@ -369,15 +367,15 @@ Mary Bowman, Director of IT Operations
 
 The preferred solution consists of the following high-level components:
 
-1.  Admin website through which videos can be uploaded by Contoso employees
+1.  Admin website through which videos can be uploaded by Contoso employees.
 
-2.  "Public" or end-user website through which customers of Contoso can watch video courses, including access to Video Insights such as transcriptions, captions, and search features
+2.  "Public" or end-user website through which customers of Contoso can watch video courses, including access to Video Insights such as transcriptions, captions, and search features.
 
 3.  Background processing that is implemented with a serverless architecture using Azure Logic Apps and Azure Functions. This background processing orchestrates the video upload or encoding workflow.
 
-4.  Azure Video Indexer service or API provides video encoding and indexing capabilities, as well as video streaming to the "public" or end-user website
+4.  Azure Video Indexer service or API provides video encoding and indexing capabilities, as well as video streaming to the "public" or end-user website.
 
-5.  Backend database is used to store application data. It is recommended to use Azure Cosmos DB for higher scalability, but Azure SQL Database could also be implemented
+5.  Backend database is used to store application data. It is recommended to use Azure Cosmos DB for higher scalability, but Azure SQL Database could also be implemented.
 
 The following High-Level Diagram displays the overall, general architecture of the preferred solution:
 
@@ -388,7 +386,7 @@ The following High-Level Diagram displays the overall, general architecture of t
 
 -   Hosted using Azure Web Apps
 
--   Separate App Service Plan for each app so they can be scaled independently
+-   Separate App Service Plan for each app so they can be scaled independently.
 
 -   Admin website secures using Azure AD so only Contoso employees can access it.
 
@@ -398,15 +396,15 @@ The following High-Level Diagram displays the overall, general architecture of t
 
 -   Provides Video Encoding
 
--   Provides Video Transcription (Audio and OCR) -- including automatic translation into many different languages (*English, Chinese, German, etc.*)
+-   Provides Video Transcription (Audio and OCR) -- including automatic translation into many different languages (*English, Chinese, German, etc.*).
 
 **Background Processing**
 
 -   Video files uploaded to Azure Storage Account
 
--   Azure Logic App triggered to upload videos to Video Indexer service
+-   Azure Logic App triggered to upload videos to Video Indexer service.
 
--   Azure Function integrated with Logic App to update Video processing status in back-end database
+-   Azure Function integrated with Logic App to update Video processing status in back-end database.
 
 ## Checklist of preferred objection handling
 
