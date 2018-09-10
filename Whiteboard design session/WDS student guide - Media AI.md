@@ -47,7 +47,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Abstract and learning objectives 
 
-In this whiteboard design session, you will work in a group to look at the various options and services available to you in Azure to design a video based learning solution that supports uploading and playback of videos, as well as using the more advanced AI capabilties of the platform.
+In this whiteboard design session, you will work in a group to look at the various options and services available to you in Azure to design a video based learning solution that supports uploading and playback of videos, as well as using the more advanced AI capabilities of the platform.
 
 By the end of the whiteboard design session you will be better able to design media applications including setup of the Video Indexer API, upload videos to Blob Storage to be encoded with Azure Video Indexer, and integrate Video Indexer through Logic Apps and Azure Functions.
 
@@ -60,11 +60,9 @@ Analyze your customer’s needs.
 Timeframe: 15 minutes 
 
 Directions: With all participants in the session, the facilitator or SME presents an overview of the customer case study along with technical tips. 
-1.  Meet your table participants and trainer 
-2.  Read all of the directions for steps 1–3 in the student guide 
-3.  As a table team, review the following customer case study
-
-
+1.  Meet your table participants and trainer. 
+2.  Read all of the directions for steps 1–3 in the student guide. 
+3.  As a table team, review the following customer case study.
 
 ### Customer situation
 
@@ -80,17 +78,17 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 
 ### Customer needs 
 
-1.  The system must scale globally for their many clients all over the world, including new clients as Contoso grows their IT training business
+1.  The system must scale globally for their many clients all over the world, including new clients as Contoso grows their IT training business.
 
-2.  They need to lessen the burden of content development by automatically generating video transcripts (video captions) and translate those into many other languages as well
+2.  They need to lessen the burden of content development by automatically generating video transcripts (video captions) and translate those into many other languages as well.
 
-3.  Copy protection or DRM are desired to keep their IP from getting stolen
+3.  Copy protection or DRM are desired to keep their IP from getting stolen.
 
-4.  The ability to easily search through the content is needed so the service can be an easy to use lookup reference
+4.  The ability to easily search through the content is needed so the service can be an easy to use lookup reference.
 
-5.  The system needs to have an administration portal where new and updated content can be maintained by their internal staff
+5.  The system needs to have an administration portal where new and updated content can be maintained by their internal staff.
 
-6.  Use serverless compute where possible to minimize overall maintenance and overhead cost
+6.  Use serverless compute where possible to minimize overall maintenance and overhead cost.
 
 ### Customer objections 
 
@@ -116,20 +114,20 @@ Mary Bowman, the Director of IT Operations for Contoso, has seen some demos of t
 ## Step 2: Design a proof of concept solution
 
 **Outcome** 
+
 Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format. 
 
 Timeframe: 60 minutes
 
 **Business needs**
 
-Directions: With all participants at your table, answer the following questions and list the answers on a flip chart. 
+Directions: With all participants at your table, answer the following questions and list the answers on a flip chart: 
 1.  Who should you present this solution to? Who is your target customer audience? Who are the decision makers? 
 2.  What customer business needs do you need to address with your solution?
 
 **Design** 
 
-Directions: With all participants at your table, respond to the following questions on a flip chart.
-
+Directions: With all participants at your table, respond to the following questions on a flip chart:
 
 1.  What Azure Services are to be used to meet all of the customer needs?
 
@@ -141,13 +139,11 @@ Directions: With all participants at your table, respond to the following questi
 
 Directions: With all participants at your table: 
 
-1.  Identify any customer needs that are not addressed with the proposed solution 
-2.  Identify the benefits of your solution
-3.  Determine how you will respond to the customer’s objections 
+1.  Identify any customer needs that are not addressed with the proposed solution. 
+2.  Identify the benefits of your solution.
+3.  Determine how you will respond to the customer’s objections. 
 
 Prepare a 15-minute chalk-talk style presentation to the customer. 
-
-
 
 ## Step 3: Present the solution
 
@@ -160,14 +156,13 @@ Timeframe: 30 minutes
 **Presentation** 
 
 Directions:
-1.  Pair with another table
-2.  One table is the Microsoft team and the other table is the customer
-3.  The Microsoft team presents their proposed solution to the customer
-4.  The customer makes one of the objections from the list of objections
-5.  The Microsoft team responds to the objection
+1.  Pair with another table.
+2.  One table is the Microsoft team and the other table is the customer.
+3.  The Microsoft team presents their proposed solution to the customer.
+4.  The customer makes one of the objections from the list of objections.
+5.  The Microsoft team responds to the objection.
 6.  The customer team gives feedback to the Microsoft team.
-7.  Tables switch roles and repeat Steps 2–6
-
+7.  Tables switch roles and repeat Steps 2–6.
 
 ##  Wrap-up 
 
