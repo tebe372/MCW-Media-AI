@@ -16,7 +16,7 @@ In this workshop, you will learn how to build, setup, and configure a Web Applic
 At the end of the workshop you will be better able to build and manages media applications including Setup Video Indexer API, upload videos to Blob Storage to be encoded with Azure Video Indexer, and integrate Video Indexer through Logic Apps and Azure Functions.
 
 ### Whiteboard Design Session
-In this whiteboard design session, you will work in a group to look at the various options and services available to you in Azure to design a video based learning solution that supports uploading and playback of videos, as well as using the more advanced AI capabilties of the platform.
+In this whiteboard design session, you will work in a group to look at the various options and services available to you in Azure to design a video based learning solution that supports uploading and playback of videos, as well as using the more advanced AI capabilities of the platform.
 
 By the end of the whiteboard design session you will be better able to design media applications including setup of the Video Indexer API, upload videos to Blob Storage to be encoded with Azure Video Indexer, and integrate Video Indexer through Logic Apps and Azure Functions. 
 
