@@ -170,7 +170,7 @@ In this exercise, you will set the import workflow for uploading and importing v
 
 ### Task 1: Create storage account for video files
 
-1.  Open a browser window and login to the Azure Portal <http://portal.azure.com>.
+1.  Open a browser window and login to the Azure Portal: <http://portal.azure.com>.
 
 2.  In the menu, select **+Create a resource**, then **Storage**, and **Storage account**.
 
@@ -184,9 +184,9 @@ In this exercise, you will set the import workflow for uploading and importing v
 
     c.  Resource Group: **ContosoVideo**
 
-    d.  Location: Choose the location closest to you.
+    d.  Location: **Choose the location closest to you.**
     
-        ![The information above is entered and highlighted on the Create storage account blade.](images/Hands-onlabstep-by-step-MediaAIimages/media/image28.png "Configure the settings on the Create storage account blade")
+       ![The information above is entered and highlighted on the Create storage account blade.](images/Hands-onlabstep-by-step-MediaAIimages/media/image28.png "Configure the settings on the Create storage account blade")
 
 4.  Select **Create**.
 
@@ -276,7 +276,7 @@ In this exercise, you will set the import workflow for uploading and importing v
 15. Enter the following values for the *Video Indexer -- Get account access token** Action:
 
     - Location: **trial**
-    - Account ID: Select your Video Indexer Account ID from the dropdown.
+    - Account ID: **Select your Video Indexer Account ID from the dropdown.**
     - Allow Edit: **true**
 
     ![](images/Hands-onlabstep-by-step-MediaAIimages/media/logicapps-action-video-indexer-get-account-access-token-fields.png)
@@ -287,7 +287,7 @@ In this exercise, you will set the import workflow for uploading and importing v
 
 17. Enter the following values for the **Video Indexer -- Upload video and index (using a URL)** connection, then select **Create**:
 
-    - Connection Name: **enter a name for the connection**
+    - Connection Name: **nter a name for the connection**
 
     - API Key: **Paste in the Video Indexer API Key that was copied previously**.
 
@@ -297,7 +297,7 @@ In this exercise, you will set the import workflow for uploading and importing v
 
     - Location: **trial**
     - Account ID: **Select your Video Indexer Account ID from the dropdown**.
-    - Access Token: choose the **Access Token** output from the **Get Account Access Token** action.
+    - Access Token: **Choose the **Access Token** output from the **Get Account Access Token** action.**
 
         ![](images/Hands-onlabstep-by-step-MediaAIimages/media/image178.png)
 
@@ -361,7 +361,7 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
     - Resource Group: **ContosoVideo**
 
-    - Location: Choose the same location as previously.
+    - Location: **Choose the same location as previously.**
   
     ![The values above are highlighted on the Azure Cosmos DB New account blade.](images/Hands-onlabstep-by-step-MediaAIimages/media/image58.png "Configure Azure Cosmos DB New account settings")
 
@@ -767,7 +767,7 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
     ![The CosmosDB\_AuthKey value is highlighted on the Application settings pane.](images/Hands-onlabstep-by-step-MediaAIimages/media/image97.png "Add a new App Setting with the Key of CosmosDB_AuthKey")
 
-12. Add a new App Setting with the Key of **CosmosDB\_****Database** with the Value set to **learning**.
+12. Add a new App Setting with the Key of **CosmosDB_Database** with the Value set to **learning**.
 
     ![The CosmosDB\_Database value is highlighted on the Application settings pane.](images/Hands-onlabstep-by-step-MediaAIimages/media/image98.png "Add a new App Setting with the Key of CosmosDB_Database")
 
@@ -783,7 +783,7 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
     - Name: **videostorage**
 
-    - Value: ***paste in the Storage Account connection string copied previously***
+    - Value: **Paste in the Storage Account connection string copied previously.**
 
     - Type: **Custom** 
 
@@ -921,7 +921,7 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 
 20. On the Configure App Service Plan dialog, enter the following values, then choose **OK**:
 
-    - Location: **choose the same location you used for the rest of the lab**
+    - Location: **Choose the same location you used for the rest of the lab**.
 
     - Size: **Consumption**
  
@@ -947,7 +947,7 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 
 3.  Open the **Function1.cs** file for the Azure Function code.
 
-4.  Modify the **Run** method declaration to include the following "*dynamic inputDocument**" ***parameter and **DocumentDB** attribute
+4.  Modify the **Run** method declaration to include the following "*dynamic inputDocument*" **parameter** and **DocumentDB** attribute.
 
     ```
         [DocumentDB("learning", "videos", Id = "{documentId}", ConnectionStringSetting = "contosovideodb_DOCUMENTDB")] dynamic inputDocument,
