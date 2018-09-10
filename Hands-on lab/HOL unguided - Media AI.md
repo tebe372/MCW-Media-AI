@@ -134,7 +134,7 @@ Contoso has asked you to build a media streaming service so they can deliver the
 
 -   Local machine or Azure LABVM virtual machine configured with:
 
-    -   Visual Studio 2017 Community Edition or later
+    -   Visual Studio 2017 Community Edition or later.
 
 
 ## Exercise 1: Signup for Video Indexer API Service
@@ -147,23 +147,23 @@ In this exercise, you will setup the Video Indexer API within Microsoft Azure.
 
 #### Tasks to complete
 
-1.  Signup for an account for the **Video Indexer API**: <https://api-portal.videoindexer.ai/>
+1.  Signup for an account for the **Video Indexer API**: <https://api-portal.videoindexer.ai/>.
 
-2.  Subscribe to the **Authorization** API Product Subscription
+2.  Subscribe to the **Authorization** API Product Subscription.
 
 #### Exit criteria
 
--   You have an Account and Subscription to the **Authorization** API Product within the **Video Indexer API**
+-   You have an Account and Subscription to the **Authorization** API Product within the **Video Indexer API**.
 
 ### Task 2: Copy Video Indexer API Key
 
 #### Tasks to complete
 
-1.  Locate the **API Key** for your **Video Indexer API Authorization Subscription**
+1.  Locate the **API Key** for your **Video Indexer API Authorization Subscription**.
 
 #### Exit criteria
 
--   You've copied the **Video Indexer API Key** from your Subscription for later use
+-   You've copied the **Video Indexer API Key** from your Subscription for later use.
 
 ### Task 3: Copy Video Indexer Account ID
 
@@ -173,7 +173,7 @@ In this exercise, you will setup the Video Indexer API within Microsoft Azure.
 
 #### Exit criteria
 
-- You've copied the **Video Indexer Account ID** from your Video Indexer Account at <https://videoindexer.ai>
+- You've copied the **Video Indexer Account ID** from your Video Indexer Account at <https://videoindexer.ai>.
 
 ##  Exercise 2: Setup video import workflow
 
@@ -185,25 +185,25 @@ In this exercise, you will set the import workflow for uploading and importing v
 
 #### Tasks to complete
 
-1.  Create a storage account that can be used to upload video files to
+1.  Create a storage account that can be used to upload video files to.
 
-    a.  The storage account should have a Blob Container named **videos**
+    a.  The storage account should have a Blob Container named **videos**.
 
 #### Exit criteria
 
--   You have a storage account to use for uploading videos within the application
+-   You have a storage account to use for uploading videos within the application.
 
 ### Task 2: Create Azure Logic App to process videos
 
 #### Tasks to complete
 
-1.  Create a new Azure Logic App that is triggered when a new Blob is saved in the storage account
+1.  Create a new Azure Logic App that is triggered when a new Blob is saved in the storage account.
 
-2.  The Logic App integrates the Video Indexer Connector to upload and index the uploaded video
+2.  The Logic App integrates the Video Indexer Connector to upload and index the uploaded video.
 
 #### Exit criteria
 
--   A Logic App has been created that is triggered by a new Blob in the Storage Account, then passes that video file to the Video Indexer Connector for processing
+-   A Logic App has been created that is triggered by a new Blob in the Storage Account, then passes that video file to the Video Indexer Connector for processing.
 
 ## Exercise 3: Enable admin website to upload videos
 
@@ -215,63 +215,63 @@ In this exercise, you will wire up the Admin website to enable Video Upload func
 
 #### Tasks to complete
 
-1.  Provision an Azure Cosmos DB Account that will be used as the backend database for the application
+1.  Provision an Azure Cosmos DB Account that will be used as the backend database for the application.
 
 #### Exit criteria
 
--   The Azure Cosmos DB Account should be provisioned using the **SQL API**, plus have a database named **learning**, a collection named **videos**
+-   The Azure Cosmos DB Account should be provisioned using the **SQL API**, plus have a database named **learning**, a collection named **videos**.
 
 ### Task 2: Integrate Cosmos DB into admin website
 
 #### Tasks to complete
 
-1.  Add code to the **ContosoLearning.Data** and **ContosoLearning.Web.Admin** projects so that the Data Access Layer (DAL) is coded to work with using the Azure Cosmos DB account as the backend database for the application
+1.  Add code to the **ContosoLearning.Data** and **ContosoLearning.Web.Admin** projects so that the Data Access Layer (DAL) is coded to work with using the Azure Cosmos DB account as the backend database for the application.
 
 #### Exit criteria
 
--   The **Get**, **GetAll**, **Insert**, and **Delete** data access methods have code that integrates with Azure Cosmos DB
+-   The **Get**, **GetAll**, **Insert**, and **Delete** data access methods have code that integrates with Azure Cosmos DB.
 
 ### Task 3: Integrate File Upload into Admin Web App
 
 #### Tasks to complete
 
-1.  Add file upload capabilities to the admin website application so admin users can upload new videos
+1.  Add file upload capabilities to the admin website application so admin users can upload new videos.
 
 #### Exit criteria
 
--   Videos can be uploaded through the admin website and saved to Azure Storage
+-   Videos can be uploaded through the admin website and saved to Azure Storage.
 
 ### Task 4: Add ability to delete video
 
 #### Tasks to complete
 
-1.  Modify the **ContosoLearning.Web.Admin** website application so that the **Delete** code for deleting videos is completed
+1.  Modify the **ContosoLearning.Web.Admin** website application so that the **Delete** code for deleting videos is completed.
 
 #### Exit criteria
 
--   Admin users can delete videos that have been previously uploaded
+-   Admin users can delete videos that have been previously uploaded.
 
--   When a video is deleted, it also deletes the video from **Video Indexer** as well as **Cosmos DB** and the **Storage Account**
+-   When a video is deleted, it also deletes the video from **Video Indexer** as well as **Cosmos DB** and the **Storage Account**.
 
 ### Task 5: Deploy admin website to an Azure Web App
 
 #### Tasks to complete
 
-1.  Deploy the **Admin** website application to be hosted within an Azure Web App
+1.  Deploy the **Admin** website application to be hosted within an Azure Web App.
 
 #### Exit criteria
 
--   The **Admin** website is hosted in an Azure Web App
+-   The **Admin** website is hosted in an Azure Web App.
 
 ### Task 6: Configure application settings
 
 #### Tasks to complete
 
-1.  Configure the **Application Settings** for the Azure Web App that's hosting the **Admin** website application
+1.  Configure the **Application Settings** for the Azure Web App that's hosting the **Admin** website application.
 
 #### Exit criteria
 
--   The admin website's application settings have been configured
+-   The admin website's application settings have been configured.
 
 ## Exercise 4: Update video status when processing is complete
 
@@ -283,35 +283,35 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 
 #### Tasks to complete
 
-1.  Create an Azure Function that can be called by the Azure Logic App
+1.  Create an Azure Function that can be called by the Azure Logic App.
 
 #### Exit criteria
 
 -   A new Azure Function was created.
 
-    -   It accepts **"documentId"** and **"videoId"** parameters so it can integrate with Cosmos DB and Video Indexer
+    -   It accepts **"documentId"** and **"videoId"** parameters so it can integrate with Cosmos DB and Video Indexer.
 
 ### Task 2: Update Cosmos DB document with video processing state
 
 #### Tasks to complete
 
-1.  Code the Azure Function so it can update the Cosmos DB document for the video with the current **Processing State** for the video within Azure Video Indexer
+1.  Code the Azure Function so it can update the Cosmos DB document for the video with the current **Processing State** for the video within Azure Video Indexer.
 
 #### Exit criteria
 
--   The Azure Function has an **Input binding,** so it can read and write the document for the **documentId** passed to the function from the Logic App
+-   The Azure Function has an **Input binding,** so it can read and write the document for the **documentId** passed to the function from the Logic App.
 
--   The document is updated to contain the **videoId** property
+-   The document is updated to contain the **videoId** property.
 
 ### Task 3: Update video state when processing is complete
 
 #### Tasks to complete
 
-1.  Update the Azure Logic App to integrate the Azure Function that was created
+1.  Update the Azure Logic App to integrate the Azure Function that was created.
 
 #### Exit criteria
 
--   The Azure Logic App calls the Azure Function (by passing **documentId** and **videoId**) periodically while the video is processing to update status, as well as calling it again when processing is completed
+-   The Azure Logic App calls the Azure Function (by passing **documentId** and **videoId**) periodically while the video is processing to update status, as well as calling it again when processing is completed.
 
 ## Exercise 5: Add video player to front-end application
 
@@ -323,72 +323,73 @@ In this exercise, you will extend the front-end application foundation to includ
 
 #### Tasks to complete
 
-1.  Update the **ContosoLearning.Web.Public** application project to include code that integrates the Azure Cosmos DB collection as the database backend
+1.  Update the **ContosoLearning.Web.Public** application project to include code that integrates the Azure Cosmos DB collection as the database backend.
+
 #### Exit criteria
 
--   The **Index** list page displays a list of all videos in the database
+-   The **Index** list page displays a list of all videos in the database.
 
--   The **Video** detail pages or views of the application are coded to load data for the video matching the document ID passed in
+-   The **Video** detail pages or views of the application are coded to load data for the video matching the document ID passed in.
 
 ### Task 2: Display video thumbnail image
 
 #### Tasks to complete
 
-1.  Add display of the video thumbnail images to the **Index** list page by populating the **ThumbnailUrl** property by calling the **Video Indexer API**
+1.  Add display of the video thumbnail images to the **Index** list page by populating the **ThumbnailUrl** property by calling the **Video Indexer API**.
 
 #### Exit criteria
 
--   When the **Index** list page is displayed, the thumbnail images for videos in the database are shown in the UI
+-   When the **Index** list page is displayed, the thumbnail images for videos in the database are shown in the UI.
 
 ### Task 3: Add video player
 
 #### Tasks to complete
 
-1.  Add the video player from Video Indexer to the **Video** view or page
+1.  Add the video player from Video Indexer to the **Video** view or page.
 
 #### Exit criteria
 
--   The **Video** view or page in the application shows the video player for the video being shown
+-   The **Video** view or page in the application shows the video player for the video being shown.
 
 ### Task 4: Add video insights
 
 #### Tasks to complete
 
-1.  Add the video insights from Video Indexer to the **Video** view or page
+1.  Add the video insights from Video Indexer to the **Video** view or page.
 
 #### Exit criteria
 
--   The **Video** view or page in the application shows the video insights from Video Indexer next to the video player
+-   The **Video** view or page in the application shows the video insights from Video Indexer next to the video player.
 
 ### Task 5: Integrate video player and insights together
 
 #### Tasks to complete
 
-1.  Integrate the video player and video insights from video insights
+1.  Integrate the video player and video insights from video insights.
 
 #### Exit criteria
 
--   The video player and video insights UI within the **Video** page or view in the application interact when the video is playing so the video insights enhance the video player experience
+-   The video player and video insights UI within the **Video** page or view in the application interact when the video is playing so the video insights enhance the video player experience.
 
 ### Task 6: Deploy public website to an Azure Web App
 
 #### Tasks to complete
 
-1.  Deploy the **Public** website application to be hosted within an Azure Web App
+1.  Deploy the **Public** website application to be hosted within an Azure Web App.
 
 #### Exit criteria
 
--   The **Public** website is hosted in an Azure Web App
+-   The **Public** website is hosted in an Azure Web App.
 
 ### Task 7: Configure application settings
 
 #### Tasks to complete
 
-1.  Configure the **Application Settings** for the Azure Web App that's hosting the **Public** website application
+1.  Configure the **Application Settings** for the Azure Web App that's hosting the **Public** website application.
 
 #### Exit criteria
 
--   The public website's application settings have been configured
+-   The public website's application settings have been configured.
 
 ## Exercise 6: Test the application
 
@@ -400,25 +401,23 @@ In this exercise, you will test out the Admin and Public web applications.
 
 #### Tasks to complete
 
-1.  Use the **Admin** website to upload at least one video
+1.  Use the **Admin** website to upload at least one video.
 
 #### Exit criteria
 
--   Videos can be uploaded through the **Admin** website
+-   Videos can be uploaded through the **Admin** website.
 
 ### Task 2: View video and insights in public website
 
 #### Tasks to complete
 
-1.  Access the **Public** website to play videos and view their video insights
+1.  Access the **Public** website to play videos and view their video insights.
 
 #### Exit criteria
 
--   The **Public** website displays a list of videos in the database along with thumbnail images for each video
+-   The **Public** website displays a list of videos in the database along with thumbnail images for each video.
 
--   The **Public** website allows users to view and play videos along with the ability to view and interact with the video insights; such as video transcripts and captions translated into multiple different languages
-
-
+-   The **Public** website allows users to view and play videos along with the ability to view and interact with the video insights; such as video transcripts and captions translated into multiple different languages.
 
 ## After the hands-on lab 
 
