@@ -108,11 +108,11 @@ Design a solution and prepare to present the solution to the target customer aud
 
 -   Determine your target customer audience.
 
--   Determine customer's business needs to address your solutio.n
+-   Determine customer's business needs to address your solution.
 
 -   Design and diagram your solution.
 
--   Prepare to present your solutio.n
+-   Prepare to present your solution.
 
 **Step 3: Present the solution (30 minutes)**
 
