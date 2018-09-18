@@ -43,7 +43,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Requirements
 
--   Microsoft Azure subscription
+-   Microsoft Azure subscription <http://azure.microsoft.com/en-us/pricing/free-trial/>
 
 -   Local machine or Azure virtual machine configured with:
 
@@ -55,12 +55,6 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 Duration: 30 minutes
 
 In this lab, you will create a developer environment and download the required files for this course if you do not already have one that meets the requirements.
-
-### Prerequisites
-
-1.  Microsoft Azure subscription <http://azure.microsoft.com/en-us/pricing/free-trial/>.
-
-2.  Client computer with Windows 7 or later with Visual Studio 2017.
 
 ### Task 1: Configure a development environment
 
