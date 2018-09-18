@@ -279,7 +279,7 @@ In this exercise, you will set the import workflow for uploading and importing v
     - Account ID: **Select your Video Indexer Account ID from the dropdown.**
     - Allow Edit: **true**
 
-    ![](images/Hands-onlabstep-by-step-MediaAIimages/media/logicapps-action-video-indexer-get-account-access-token-fields.png)
+    ![Get account access token connector has properties configured.](images/Hands-onlabstep-by-step-MediaAIimages/media/logicapps-action-video-indexer-get-account-access-token-fields.png "Get access token connector has properties configured.")
 
 16. Choose **+New step**, **Add an action**, and a new **Video Indexer -- Upload video and index (using a URL)** Action.
 
@@ -299,7 +299,7 @@ In this exercise, you will set the import workflow for uploading and importing v
     - Account ID: **Select your Video Indexer Account ID from the dropdown**.
     - Access Token: **Choose the **Access Token** output from the **Get Account Access Token** action.**
 
-        ![](images/Hands-onlabstep-by-step-MediaAIimages/media/image178.png)
+        ![Access token field is highlighted to be set to the 'Access token' value from the previous Get account access token connector.](images/Hands-onlabstep-by-step-MediaAIimages/media/image178.png "Access token field is highlighted to be set to the 'Access token' value from the previous Get account access token connector.")
 
     - Video Name: Choose the **DisplayName** parameter from the **When one or more blobs are added or modified** action.
 
@@ -1211,7 +1211,7 @@ In this exercise, you will integrate an Azure Function with the Logic App Workfl
 
     ![The values above are displayed on the Until action.](images/Hands-onlabstep-by-step-MediaAIimages/media/image183.png "State is equal to Processed")
 
-8.  Choose **Add an action** to add another action within the **Until** action**,** after the **Get processing state** action.
+8.  Choose **Add an action** to add another action within the **Until** action, after the **Get processing state** action.
 
     ![Add an action is highlighted at the bottom of the Until dialog box.](images/Hands-onlabstep-by-step-MediaAIimages/media/image137.png "Select Add an action")
 
